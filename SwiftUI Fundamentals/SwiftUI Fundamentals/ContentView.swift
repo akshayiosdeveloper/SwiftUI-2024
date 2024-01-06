@@ -9,45 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Text("VStack")
-                .font(.largeTitle)
-            Text("Alignment")
-                .font(.title)
-                .foregroundColor(.gray)
-            Text("By default, views in a VStack are center aligned.")
-            VStack(alignment: .leading, spacing: 40) {
-                Text("Leading Alignment")
-                    .font(.title)
-                Divider() // Creates a thin line (Push-out view)
-                Image(systemName: "arrow.left")
-            }
-            .padding()
-            .foregroundColor(Color.white)
-            .background(RoundedRectangle(cornerRadius: 10)
-            .foregroundColor(.blue))
-            .padding()
-            VStack(alignment: .trailing, spacing: 40) {
-                Text("Trailing Alignment")
-                    .font(.title)
-                Divider()
-                Image(systemName: "arrow.right")
-            }
-            .padding()
-            .foregroundColor(Color.white)
-            .background(RoundedRectangle(cornerRadius: 10)
-            .foregroundColor(.blue))
-            .padding()
-            VStack(alignment:.trailing,spacing:10) {
-                Text("Hello")
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(RoundedRectangle(cornerRadius: 20))
-                    .foregroundColor(.gray)
-            }
-        }
-        .font(.title)
-       }
+    VStack(spacing: 20.0) {
+//    HeaderView("LazyVStack",
+//    subtitle: "Alignment",
+//    desc: "Since LazyVStacks are push-out views (horizontally) the alignment
+//    parameter could be useful.")
+    Text("Leading")
+    LazyVStack(alignment: .leading, spacing: 40) {
+    Image(systemName: "1.circle")
+    Image(systemName: "2.circle")
+    Image(systemName: "3.circle")
+    }
+    .border(Color.red, width: 2) // Draws a border around the frame of the view
+    Text("Trailing")
+    LazyVStack(alignment: .trailing, spacing: 40) {
+    Image(systemName: "1.circle")
+    Image(systemName: "2.circle")
+    Image(systemName: "3.circle")
+    }
+    }
+    .border(Color.red, width: 2)
+    .font(.title)
+    }
 }
 
 #Preview {
