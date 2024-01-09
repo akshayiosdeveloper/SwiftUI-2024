@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97D92B4D15F2006500C1 /* ImageView.swift */; };
 		D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */; };
 		D0C78A972B4674420022FC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A962B4674420022FC0A /* ContentView.swift */; };
 		D0C78A992B4674430022FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A982B4674430022FC0A /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D02E97D92B4D15F2006500C1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		D0C78A912B4674420022FC0A /* SwiftUI Fundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fundamentals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_FundamentalsApp.swift; sourceTree = "<group>"; };
 		D0C78A962B4674420022FC0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */,
 				D0C78A962B4674420022FC0A /* ContentView.swift */,
+				D02E97D92B4D15F2006500C1 /* ImageView.swift */,
 				D0C78A982B4674430022FC0A /* Assets.xcassets */,
 				D0C78A9A2B4674430022FC0A /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 			);
