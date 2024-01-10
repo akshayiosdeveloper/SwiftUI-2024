@@ -9,7 +9,13 @@ import SwiftUI
 
 struct LayoutInterface: View {
     var body: some View {
-        VStack(alignment:.leading,spacing: 30) {
+        VStack {
+            Text("asdfkjsdkjfsjhdfkhskdhfkshdkhfkshkdfhkshdfkhskdhfkshkdhfkshdkfhskhdfkhsjkdhfjkshkdhfkshdkhfskhdkfhsksjdfhkjshdkfjhkjsdhkfjhsdhfjkhskjdfhkjshdkfhskhdfhksdhhjdhjdsdkfsjkhkdhfhskhh")
+        }
+        .frame(width: .infinity,height: .infinity)
+        .background(Color.red)
+        /*
+        VStack(spacing: 30) {
             VStack(alignment:.leading, spacing: 10) {
                 Text("Choose")
                     .font(.title)
@@ -60,7 +66,10 @@ struct LayoutInterface: View {
             .padding()
             .background(Color.yellow)
         }
+        .frame(width: .infinity,height: .infinity)
+        .padding()
         .background(Color.pink)
+         */
     }
 }
 
