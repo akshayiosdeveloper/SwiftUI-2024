@@ -9,48 +9,19 @@ import SwiftUI
 
 struct LayoutInterface: View {
     var body: some View {
-        VStack {
-            Text("asdfkjsdkjfsjhdfkhskdhfkshdkhfkshkdfhkshdfkhskdhfkshkdhfkshdkfhskhdfkhsjkdhfjkshkdhfkshdkhfskhdkfhsksjdfhkjshdkfjhkjsdhkfjhsdhfjkhskjdfhkjshdkfhskhdfhksdhhjdhjdsdkfsjkhkdhfhskhh")
-        }
-        .frame(width: .infinity,height: .infinity)
-        .background(Color.red)
-        /*
+     
+       
         VStack(spacing: 30) {
-            VStack(alignment:.leading, spacing: 10) {
-                Text("Choose")
-                    .font(.title)
-                    .font(.system(size: 40))
-                Text("Your Plan")
-                    .font(.title)
-                    .font(.system(size: 40))
-            }
-            HStack(spacing:20) {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Basic")
-                        .font(.title2)
-                    Text("$9")
-                        .font(.title2)
-                    Text("per month")
-                        .font(.subheadline)
-                }
-                .padding()
-                .background(Color.purple)
-                VStack(alignment:.leading,spacing: 10) {
-                    Text("Basic")
-                        .font(.title2)
-                    Text("$9")
-                        .font(.title2)
-                    Text("per month")
-                        .font(.subheadline)
-                    
-                }
-                .padding()
-                .background(Color.gray)
+            HeaderView()
+            //HStack(spacing:20) {
+            HStack() {
+                PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple)
+           
+                PricingView(title: "Pro", price: "$19", textColor: .black, bgColor: (Color(red: 240/255, green: 240/255, blue: 240/255)))
                 
             }
-            .frame(width: 200,height: 200)
-            .foregroundColor(.yellow)
-            .background(Color.blue)
+            .padding(.horizontal)
+            .background(Color.yellow)
             VStack(spacing: 10) {
                 Image(systemName: "snow")
                     .resizable()
@@ -66,13 +37,51 @@ struct LayoutInterface: View {
             .padding()
             .background(Color.yellow)
         }
-        .frame(width: .infinity,height: .infinity)
         .padding()
         .background(Color.pink)
-         */
+         
     }
 }
 
 #Preview {
     LayoutInterface()
+}
+
+struct HeaderView: View {
+    var body: some View {
+        VStack(alignment:.leading, spacing: 2) {
+            Text("Choose")
+                .font(.system(.largeTitle,design: .rounded))
+                .fontWeight(.black)
+            
+            Text("Your Plan")
+                .font(.system(.largeTitle,design: .rounded))
+                .fontWeight(.black)
+        }
+    }
+}
+
+struct PricingView: View {
+    var title: String
+    var price: String
+    var textColor: Color
+    var bgColor: Color
+    var body: some View {
+        VStack() {
+            Text(title)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.black)
+                .foregroundColor(textColor)
+            Text(price)
+                .font(.system(size: 40, weight: .heavy, design: .rounded))
+                .foregroundColor(textColor)
+            Text("per month")
+                .font(.headline)
+                .foregroundColor(textColor)
+        }
+        .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity , minHeight:100)
+        .padding(40)
+        .background(bgColor)
+        .cornerRadius(10)
+    }
 }
