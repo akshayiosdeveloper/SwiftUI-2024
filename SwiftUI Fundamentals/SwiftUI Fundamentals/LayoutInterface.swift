@@ -16,28 +16,33 @@ struct LayoutInterface: View {
             //HStack(spacing:20) {
             HStack() {
                 PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple)
-           
-                PricingView(title: "Pro", price: "$19", textColor: .black, bgColor: (Color(red: 240/255, green: 240/255, blue: 240/255)))
+                ZStack {
+                    PricingView(title: "Pro", price: "$19", textColor: .black, bgColor: (Color(red: 240/255, green: 240/255, blue: 240/255)))
+                    Text("Best for designer")
+                        .font(.system(.caption,design: .rounded))
+                        .fontWeight(.bold)
+                        .padding(5)
+                        .background(Color(red: 255/255, green: 183/255, blue: 37/255))
+                        .offset(x:0,y:87)
+                }
                 
             }
             .padding(.horizontal)
-            .background(Color.yellow)
-            VStack(spacing: 10) {
-                Image(systemName: "snow")
-                    .resizable()
-                    .frame(width: 50 ,height: 50)
-                    .aspectRatio(contentMode: .fit)
-                Text("TEAM")
-                Text("$299")
-                Text("per month")
-                ZStack {
-                    Text("Perfect with team 20 members")
-                }
+            ZStack {
+                PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255),icon: "wand.and.rays")
+                Text("Perfect for teams with 20 members")
+                    .font(.system(.caption,design: .rounded))
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(5)
+                    .background(Color(red: 255/255, green: 183/255, blue: 37/255))
+                    .offset(x:0,y:110)
             }
             .padding()
-            .background(Color.yellow)
+            Spacer()
+            
         }
-        .padding()
+        
         .background(Color.pink)
          
     }
@@ -49,14 +54,18 @@ struct LayoutInterface: View {
 
 struct HeaderView: View {
     var body: some View {
-        VStack(alignment:.leading, spacing: 2) {
-            Text("Choose")
-                .font(.system(.largeTitle,design: .rounded))
-                .fontWeight(.black)
+        HStack {
+            VStack(alignment:.leading, spacing: 2) {
+                Text("Choose")
+                    .font(.system(.largeTitle,design: .rounded))
+                    .fontWeight(.black)
+                
+                Text("Your Plan")
+                    .font(.system(.largeTitle,design: .rounded))
+                    .fontWeight(.black)
+            }
+            Spacer()
             
-            Text("Your Plan")
-                .font(.system(.largeTitle,design: .rounded))
-                .fontWeight(.black)
         }
     }
 }
@@ -66,8 +75,14 @@ struct PricingView: View {
     var price: String
     var textColor: Color
     var bgColor: Color
+    var icon: String?
     var body: some View {
         VStack() {
+            if let icon = icon {
+                Image(systemName: icon)
+                    .font(.largeTitle)
+                    .foregroundColor(textColor)
+            }
             Text(title)
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.black)
