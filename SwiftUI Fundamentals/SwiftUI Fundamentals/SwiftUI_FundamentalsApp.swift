@@ -11,8 +11,8 @@ import SwiftUI
 struct SwiftUI_FundamentalsApp: App {
     var body: some Scene {
         WindowGroup {
-           // ContentView()
-            LayoutInterface()
+            ContentView()
+           // LayoutInterface()
         }
     }
 }

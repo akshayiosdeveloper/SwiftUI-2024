@@ -13,6 +13,7 @@
 		D0C78A972B4674420022FC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A962B4674420022FC0A /* ContentView.swift */; };
 		D0C78A992B4674430022FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A982B4674430022FC0A /* Assets.xcassets */; };
 		D0C78A9C2B4674430022FC0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A9B2B4674430022FC0A /* Preview Assets.xcassets */; };
+		D0F8A2322B58306C00C138CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8A2312B58306C00C138CA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D0C78A962B4674420022FC0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0C78A982B4674430022FC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C78A9B2B4674430022FC0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0F8A2312B58306C00C138CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D0C78A982B4674430022FC0A /* Assets.xcassets */,
 				D0C78A9A2B4674430022FC0A /* Preview Content */,
 				D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */,
+				D0F8A2312B58306C00C138CA /* CardView.swift */,
 			);
 			path = "SwiftUI Fundamentals";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 				D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */,
+				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
