@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+      StateManagement()
         //ImageView()
+        /*  ScrollView Excercise */
+        /*
         ScrollView(.horizontal,showsIndicators: false) {
             HStack {
                 Group {
@@ -24,9 +27,10 @@ struct ContentView: View {
                 .frame(width:300)
             }
             Spacer()
+         */
         }
     }
-}
+
 
 #Preview {
     ContentView()
