@@ -2,3 +2,4 @@
 Working on swiftui  
 working on shapes today
 working on shapes and design a circle bar 
+working on animation (implicit animation)
