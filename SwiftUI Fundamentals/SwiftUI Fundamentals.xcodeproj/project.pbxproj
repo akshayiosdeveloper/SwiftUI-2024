@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00130FE2B9826B90011230E /* Mic_Animation.swift */; };
 		D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B75AD2B8EFCDC005A2412 /* Animation.swift */; };
 		D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97D92B4D15F2006500C1 /* ImageView.swift */; };
 		D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D00130FE2B9826B90011230E /* Mic_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mic_Animation.swift; sourceTree = "<group>"; };
 		D02B75AD2B8EFCDC005A2412 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		D02E97D92B4D15F2006500C1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutInterface.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */,
 				D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */,
 				D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */,
+				D00130FE2B9826B90011230E /* Mic_Animation.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */,
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
+				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
 				D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */,
