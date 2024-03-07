@@ -34,7 +34,7 @@ struct Animation: View {
             heartSizeChanged.toggle()
         }
          */
-        /*
+     
         ZStack {
             Circle()
                 .frame(width: 200,height: 200)
@@ -57,7 +57,8 @@ struct Animation: View {
             self.circleColorChanged.toggle()
                 self.heartColorChange.toggle()
             }
-            */
+           
+        /*
         ZStack {
             Circle()
         .frame(width: 200, height: 200)
@@ -76,7 +77,7 @@ struct Animation: View {
             self.heartColorChange.toggle()
             self.heartSizeChanged.toggle()
         }
-        
+       */
     }
 }
 

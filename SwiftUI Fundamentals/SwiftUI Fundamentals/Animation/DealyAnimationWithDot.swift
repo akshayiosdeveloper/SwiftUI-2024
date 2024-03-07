@@ -2,7 +2,7 @@
 //  DealyAnimationWithDot.swift
 //  SwiftUI Fundamentals
 //
-//  Created by Akshay Kumar on 05/03/24.
+//  Created by Akshay Kumar on 06/03/24.
 //
 
 import SwiftUI

@@ -13,6 +13,7 @@
 		D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */; };
 		D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */; };
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
+		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
@@ -33,6 +34,7 @@
 		D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutInterface.swift; sourceTree = "<group>"; };
 		D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLoader.swift; sourceTree = "<group>"; };
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
+		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */,
 				D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */,
 				D00130FE2B9826B90011230E /* Mic_Animation.swift */,
+				D04E99242B9979BD00EF3061 /* Transistion.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */,
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */,
+				D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */,
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
