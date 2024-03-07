@@ -6,3 +6,4 @@ working on animation (implicit animation)
 working on custom loader
 adding dealy loader and percentage loader
 adding rectanuglar animation (page no 221)
+working on symtric and asymteric animation
