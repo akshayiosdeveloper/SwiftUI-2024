@@ -14,6 +14,7 @@
 		D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */; };
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
 		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
+		D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99262B99804800EF3061 /* AnimationChallenge.swift */; };
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
@@ -35,6 +36,7 @@
 		D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLoader.swift; sourceTree = "<group>"; };
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
 		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
+		D04E99262B99804800EF3061 /* AnimationChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationChallenge.swift; sourceTree = "<group>"; };
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */,
 				D00130FE2B9826B90011230E /* Mic_Animation.swift */,
 				D04E99242B9979BD00EF3061 /* Transistion.swift */,
+				D04E99262B99804800EF3061 /* AnimationChallenge.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
+				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
 				D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 				D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */,
