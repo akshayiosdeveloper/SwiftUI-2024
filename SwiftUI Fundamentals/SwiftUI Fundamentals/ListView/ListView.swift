@@ -16,15 +16,28 @@ struct ListView: View {
                         Restaurant(name: "Traif", image: "traif"),
                         Restaurant(name: "Graham Avenue Meats And Deli", image: "grahamaven"),
                         Restaurant(name: "Waffle & Wolf", image: "wafflewolf"), Restaurant(name: "Five Leaves", image: "fiveleaves"), Restaurant(name: "Cafe Lore", image: "cafelore"), Restaurant(name: "Confessional", image: "confessional"), Restaurant(name: "Barrafina", image: "barrafina"), Restaurant(name: "Donostia", image: "donostia"), Restaurant(name: "Royal Oak", image: "royaloak"), Restaurant(name: "CASK Pub and Kitchen", image: "caskpubkitchen")
-                        ]
+    ]
     var body: some View {
-        List(restaurants) { restaurant in
-            BasicImageView(restaurant: restaurant)
+        List {
+            ForEach(restaurants.indices, id: \.self) { index in
+                if (0...1).contains(index) { FullImageRow(restaurant: self.restaurants[index])
+                } else {
+                    BasicImageView(restaurant: self.restaurants[index])
+                }
+            }
+            .listRowSeparator(.hidden, edges: .bottom)
+            
         }
+        .background {
+            Image("homei")
+                .resizable()
+                .scaledToFill()
+                .clipped()
+        }
+        
         .listStyle(.plain)
     }
 }
-
 #Preview {
     ListView()
 }
@@ -45,4 +58,26 @@ struct BasicImageView: View {
             Text(restaurant.name)
         }
     }
+}
+
+struct FullImageRow: View {
+    var restaurant: Restaurant
+    var body: some View {
+        ZStack {
+            Image(restaurant.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 200)
+                .cornerRadius(10)
+                .overlay(
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                        .opacity(0.2)
+)
+            Text(restaurant.name)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.black)
+                .foregroundColor(.white)
+} }
 }
