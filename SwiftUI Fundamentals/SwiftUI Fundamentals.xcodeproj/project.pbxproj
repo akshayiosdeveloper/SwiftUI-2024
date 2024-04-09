@@ -22,6 +22,8 @@
 		D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A13F72B89C902005A2DA0 /* Loader.swift */; };
 		D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A88E32B87AC1400EFB08F /* PathExercise.swift */; };
 		D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADF1EB2B81D2EF00699060 /* Paths.swift */; };
+		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
+		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
 		D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */; };
 		D0C78A972B4674420022FC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A962B4674420022FC0A /* ContentView.swift */; };
 		D0C78A992B4674430022FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A982B4674430022FC0A /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		D09A13F72B89C902005A2DA0 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		D09A88E32B87AC1400EFB08F /* PathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExercise.swift; sourceTree = "<group>"; };
 		D0ADF1EB2B81D2EF00699060 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
+		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 		D0C78A912B4674420022FC0A /* SwiftUI Fundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Fundamentals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_FundamentalsApp.swift; sourceTree = "<group>"; };
 		D0C78A962B4674420022FC0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				D087C8E42BA2C4E600503815 /* ListView.swift */,
+				D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */,
+				D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */,
+				D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */,
 				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
+				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
 				D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 				D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */,

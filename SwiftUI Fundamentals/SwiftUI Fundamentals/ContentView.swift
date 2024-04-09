@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      StateManagement()
+        //ListView()
+       // AnimationChallenge()
+     // StateManagement()
         //ImageView()
+        ListView_Exercise()
         /*  ScrollView Excercise */
         /*
         ScrollView(.horizontal,showsIndicators: false) {

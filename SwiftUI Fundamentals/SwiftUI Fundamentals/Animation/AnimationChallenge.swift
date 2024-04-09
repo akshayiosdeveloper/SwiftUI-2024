@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+import OSLog
 struct AnimationChallenge: View {
+    static let log = OSLog(subsystem: "com.akshay.animation", category: .pointsOfInterest)
     @State private var processing = false
     @State private var completed = false
     @State private var loading = false
@@ -61,6 +62,7 @@ struct AnimationChallenge: View {
     }
     
     private func startProcessing() {
+        os_signpost(.begin,log: AnimationChallenge.log,name: "start processing")
         self.loading = true
         
         // Simulate an operation by using DispatchQueue.main.asyncAfter
@@ -73,11 +75,14 @@ struct AnimationChallenge: View {
     
     private func endProcessing() {
         // Reset the button's state
+        os_signpost(.end,log: AnimationChallenge.log,name: "end processing")
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.processing = false
             self.completed = false
             self.loading = false
+           
         }
+        
     }
 }
 
