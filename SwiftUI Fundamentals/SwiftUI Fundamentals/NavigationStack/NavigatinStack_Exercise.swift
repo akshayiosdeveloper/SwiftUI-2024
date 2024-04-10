@@ -1,5 +1,5 @@
 //
-//  NavigationStack.swift
+//  NavigatinStack_Exercise.swift
 //  SwiftUI Fundamentals
 //
 //  Created by Akshay Kumar on 10/04/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationStack: View {
+struct NavigatinStack_Exercise: View {
     
     var restaurants = [ Restaurant(name: "Cafe Deadend", image: "cafedeadend"),
                    Restaurant(name: "Homei", image: "homei"),
@@ -33,35 +33,24 @@ struct NavigationStack: View {
     ]
     
     var body: some View {
-        List {
-            ForEach(restaurants) { restaurant in
-                BasicImageRow(restaurant: restaurant)
+        NavigationStack {
+            List {
+                ForEach(restaurants) { restaurant in
+                    
+                  NavigationLink(
+                    destination: RestaurantDetailView(restaurant: restaurant),
+                    label: {
+                        BasicImageView(restaurant: restaurant)
+                    })
+
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Restaurants")
         }
-        .listStyle(.plain)
     }
 }
 
 #Preview {
-    NavigationStack()
-}
-
-struct Restaurant: Identifiable {
-    var id = UUID()
-    var name: String
-    var image: String
-}
-
-struct BasicImageRow: View {
-    var restaurant: Restaurant
-    
-    var body: some View {
-        HStack {
-            Image(restaurant.image)
-                .resizable()
-                .frame(width: 40, height: 40)
-                .cornerRadius(5)
-            Text(restaurant.name)
-        }
-    }
+    NavigatinStack_Exercise()
 }
