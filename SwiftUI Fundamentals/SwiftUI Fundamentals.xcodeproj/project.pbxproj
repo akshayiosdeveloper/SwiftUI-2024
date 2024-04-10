@@ -15,6 +15,7 @@
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
 		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
 		D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99262B99804800EF3061 /* AnimationChallenge.swift */; };
+		D05121882BC6513800800C30 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05121872BC6513800800C30 /* NavigationStack.swift */; };
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
@@ -40,6 +41,7 @@
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
 		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
 		D04E99262B99804800EF3061 /* AnimationChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationChallenge.swift; sourceTree = "<group>"; };
+		D05121872BC6513800800C30 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		D05121862BC6511B00800C30 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				D05121872BC6513800800C30 /* NavigationStack.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
 		D087C8E32BA2C4D600503815 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D05121862BC6511B00800C30 /* NavigationStack */,
 				D087C8E32BA2C4D600503815 /* ListView */,
 				D02B75AC2B8EFCC9005A2412 /* Animation */,
 				D09A88E22B87ABE900EFB08F /* Excercise */,
@@ -222,6 +233,7 @@
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
 				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
+				D05121882BC6513800800C30 /* NavigationStack.swift in Sources */,
 				D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 				D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */,
