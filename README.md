@@ -13,3 +13,4 @@ working on adding basic image row.
 working on list view and tomorrow i will start challege for list view 
 completed the list view excercise 
 working on navigation stack and add detail view 
+Done with navigation bar chapter 
