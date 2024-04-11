@@ -47,8 +47,25 @@ struct NavigatinStack_Exercise: View {
             }
             .listStyle(.plain)
             .navigationTitle("Restaurants")
+            .navigationBarTitleDisplayMode(.inline)
+            .ignoresSafeArea(.all,edges: .top)
+            .navigationBarBackButtonHidden(true)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    Button(action: {
+//                        // Navigate to the previous screen
+//                    }) {
+//                        Image(systemName: "chevron.left.circle.fill")
+//                            .font(.largeTitle)
+//                            .foregroundColor(.white)
+//            } }
+//            }
+          
+            
         }
+        .accentColor(.black)
     }
+
 }
 
 #Preview {
