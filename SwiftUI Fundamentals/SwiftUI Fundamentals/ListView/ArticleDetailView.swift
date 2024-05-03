@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ArticleDetailView: View {
-    
+    @Environment(\.dismiss) var dismiss
+    @State private var showAlert = false
     var article: Article
     
     var body: some View {
@@ -39,8 +40,39 @@ struct ArticleDetailView: View {
             }
             
         }
-        
+        .overlay(
+            HStack {
+                Spacer()
+                
+                VStack {
+                    Button {
+                      // dismiss()
+                        showAlert = true
+                    } label: {
+                        Image(systemName: "chevron.down.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                    .padding(.trailing, 20)
+                    .padding(.top, 40)
+                    Spacer()
+                    
+                }
+            }
+        )
+        .alert("Warning", isPresented: $showAlert, actions: { Button {
+                dismiss()
+            } label: {
+                Text("Confirm")
+            }
+            Button(role: .cancel, action: {}) {
+                Text("Cancel")
+            }
+        }, message: {
+            Text("Are you sure you want to leave?")
+        })
         .ignoresSafeArea(.all, edges: .top)
+        
         
     }
 }
