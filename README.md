@@ -14,3 +14,4 @@ working on list view and tomorrow i will start challege for list view
 completed the list view excercise 
 working on navigation stack and add detail view 
 Done with navigation bar chapter 
+Started new chapter of model and alerts in swiftui
