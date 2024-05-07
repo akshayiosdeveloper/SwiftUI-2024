@@ -29,7 +29,10 @@ struct SheetExample: View {
 //                }
 //            })
             // second way to represent the modal view
-            .sheet(item: $selectedArticle, content: { article in
+            //.sheet(item: $selectedArticle, content: { article in
+               // ArticleDetailView(article: article)
+           // })
+            .fullScreenCover(item: $selectedArticle, content: { article in
                 ArticleDetailView(article: article)
             })
             .navigationTitle("Your Reading!!!")
