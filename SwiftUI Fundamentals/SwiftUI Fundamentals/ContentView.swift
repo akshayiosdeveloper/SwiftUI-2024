@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        SheetExample()
+        SettingView()
+       // Form()
+       // SheetExample()
        // NavigatinStack_Exercise()
        // NavigationStack()
         //ListView()
