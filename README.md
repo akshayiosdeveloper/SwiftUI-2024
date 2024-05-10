@@ -16,3 +16,4 @@ working on navigation stack and add detail view
 Done with navigation bar chapter 
 Started new chapter of model and alerts in swiftui
 added full cover view model dialogue
+working on form 
