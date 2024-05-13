@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Form: View {
+struct FormDemo: View {
     
     @State var restaurants = [
         RestaurantDemo(name: "Cafe Deadend", type: "Coffee & Tea Shop", phone: "232-923423", image: "cafedeadend", priceLevel: 3),
@@ -110,7 +110,7 @@ struct Form: View {
 }
 
 #Preview {
-    Form()
+    FormDemo()
 }
 struct RestaurantDemo: Identifiable {
     var id = UUID()

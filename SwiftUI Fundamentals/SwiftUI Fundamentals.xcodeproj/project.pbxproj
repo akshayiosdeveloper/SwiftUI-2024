@@ -13,6 +13,8 @@
 		D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */; };
 		D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */; };
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
+		D03DCE222BEE43EF00B2C7DE /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DCE212BEE43EF00B2C7DE /* Form.swift */; };
+		D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DCE232BEE460800B2C7DE /* SettingView.swift */; };
 		D049B6AA2BC6569600229295 /* NavigatinStack_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049B6A92BC6569600229295 /* NavigatinStack_Exercise.swift */; };
 		D049B6AC2BC658C200229295 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049B6AB2BC658C200229295 /* RestaurantDetailView.swift */; };
 		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
@@ -42,6 +44,8 @@
 		D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutInterface.swift; sourceTree = "<group>"; };
 		D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLoader.swift; sourceTree = "<group>"; };
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
+		D03DCE212BEE43EF00B2C7DE /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		D03DCE232BEE460800B2C7DE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D049B6A92BC6569600229295 /* NavigatinStack_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatinStack_Exercise.swift; sourceTree = "<group>"; };
 		D049B6AB2BC658C200229295 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 				D04E99262B99804800EF3061 /* AnimationChallenge.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		D03DCE202BEE43DE00B2C7DE /* Form1 */ = {
+			isa = PBXGroup;
+			children = (
+				D03DCE212BEE43EF00B2C7DE /* Form.swift */,
+				D03DCE232BEE460800B2C7DE /* SettingView.swift */,
+			);
+			path = Form1;
 			sourceTree = "<group>";
 		};
 		D05121862BC6511B00800C30 /* NavigationStack */ = {
@@ -139,6 +152,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D03DCE202BEE43DE00B2C7DE /* Form1 */,
 				D0D6AF652BD12FCD001CC9EE /* Sheets */,
 				D05121862BC6511B00800C30 /* NavigationStack */,
 				D087C8E32BA2C4D600503815 /* ListView */,
@@ -250,6 +264,7 @@
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
 				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
+				D03DCE222BEE43EF00B2C7DE /* Form.swift in Sources */,
 				D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
 				D049B6AA2BC6569600229295 /* NavigatinStack_Exercise.swift in Sources */,
@@ -263,6 +278,7 @@
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
+				D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
 				D049B6AC2BC658C200229295 /* RestaurantDetailView.swift in Sources */,
 				D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */,
