@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FormDemo: View {
-    
+    @State private var showSettings: Bool = false
     @State var restaurants = [
         RestaurantDemo(name: "Cafe Deadend", type: "Coffee & Tea Shop", phone: "232-923423", image: "cafedeadend", priceLevel: 3),
         RestaurantDemo(name: "Homei", type: "Cafe", phone: "348-233423", image: "homei", priceLevel: 3),
@@ -84,7 +84,18 @@ struct FormDemo: View {
             }
             
             .navigationTitle("Restaurant")
-            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.showSettings = true
+                    }, label: {
+                        Image(systemName: "gear").font(.title2)
+                            .foregroundColor(.black)
+            }) }
+            }
+            .sheet(isPresented: $showSettings) {
+                SettingView()
+            }
         }
         
        
