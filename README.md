@@ -18,3 +18,4 @@ Started new chapter of model and alerts in swiftui
 added full cover view model dialogue
 working on form 
 fixing form error
+completed form chapter
