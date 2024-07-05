@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    var settingStore = SettingStore()
+
     var body: some View {
-     // SettingView()
-        FormDemo()
+      //SettingView()
+        FormDemo().environmentObject(settingStore)
        // Form(<#FormStyleConfiguration#>)
        //SheetExample()
        // NavigatinStack_Exercise()

@@ -35,7 +35,8 @@ struct FormDemo: View {
     
 
     @State private var selectedRestaurant: RestaurantDemo?
-    
+   @EnvironmentObject var settingStore: SettingStore
+
     var body: some View {
         NavigationStack {
             List {
@@ -88,13 +89,14 @@ struct FormDemo: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         self.showSettings = true
+                        
                     }, label: {
                         Image(systemName: "gear").font(.title2)
                             .foregroundColor(.black)
             }) }
             }
             .sheet(isPresented: $showSettings) {
-                SettingView()
+                SettingView().environmentObject(self.settingStore)
             }
         }
         
@@ -121,7 +123,7 @@ struct FormDemo: View {
 }
 
 #Preview {
-    FormDemo()
+    FormDemo().environmentObject(SettingStore())
 }
 struct RestaurantDemo: Identifiable {
     var id = UUID()
