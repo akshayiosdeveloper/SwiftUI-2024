@@ -11,8 +11,9 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
+        RegisterationPage()
       //SettingView()
-        FormDemo().environmentObject(settingStore)
+      //  FormDemo().environmentObject(settingStore)
        // Form(<#FormStyleConfiguration#>)
        //SheetExample()
        // NavigatinStack_Exercise()

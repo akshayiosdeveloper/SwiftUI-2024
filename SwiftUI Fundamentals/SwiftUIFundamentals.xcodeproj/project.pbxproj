@@ -35,6 +35,7 @@
 		D0C78A972B4674420022FC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A962B4674420022FC0A /* ContentView.swift */; };
 		D0C78A992B4674430022FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A982B4674430022FC0A /* Assets.xcassets */; };
 		D0C78A9C2B4674430022FC0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A9B2B4674430022FC0A /* Preview Assets.xcassets */; };
+		D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1FA052C4786CD0043C9BB /* RegisterationPage.swift */; };
 		D0D6AF672BD12FF2001CC9EE /* SheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6AF662BD12FF2001CC9EE /* SheetExample.swift */; };
 		D0D6AF692BD13303001CC9EE /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6AF682BD13303001CC9EE /* ArticleDetailView.swift */; };
 		D0F8A2322B58306C00C138CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8A2312B58306C00C138CA /* CardView.swift */; };
@@ -81,6 +82,7 @@
 		D0C78A962B4674420022FC0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0C78A982B4674430022FC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C78A9B2B4674430022FC0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0D1FA052C4786CD0043C9BB /* RegisterationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationPage.swift; sourceTree = "<group>"; };
 		D0D6AF662BD12FF2001CC9EE /* SheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExample.swift; sourceTree = "<group>"; };
 		D0D6AF682BD13303001CC9EE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		D0F8A2312B58306C00C138CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0D1FA022C47866E0043C9BB /* RegisterationPage */,
 				D03DCE202BEE43DE00B2C7DE /* Form1 */,
 				D0D6AF652BD12FCD001CC9EE /* Sheets */,
 				D05121862BC6511B00800C30 /* NavigationStack */,
@@ -213,6 +216,14 @@
 				D0C78A9B2B4674430022FC0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0D1FA022C47866E0043C9BB /* RegisterationPage */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1FA052C4786CD0043C9BB /* RegisterationPage.swift */,
+			);
+			path = RegisterationPage;
 			sourceTree = "<group>";
 		};
 		D0D6AF652BD12FCD001CC9EE /* Sheets */ = {
@@ -351,6 +362,7 @@
 				D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */,
 				D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */,
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
+				D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
 				D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */,
