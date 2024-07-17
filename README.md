@@ -20,3 +20,4 @@ working on form
 fixing form error
 completed form chapter
 completed chapter 14 using combine and enviroment object
+adding registeration page
