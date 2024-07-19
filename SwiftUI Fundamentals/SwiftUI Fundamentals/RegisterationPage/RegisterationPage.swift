@@ -8,29 +8,38 @@
 import SwiftUI
 
 struct RegisterationPage: View {
-    @State private var username = ""
-    @State private var password = ""
-    @State private var passwordConfirm = ""
+//    @State private var username = ""
+//    @State private var password = ""
+//    @State private var passwordConfirm = ""
+    
+    @ObservedObject private var userRegistrationViewModel = UserRegistrationViewModel()
+    
     var body: some View {
         VStack {
             Text("Create an account")
-                .font(.system(.largeTitle,design: .rounded))
+                .font(.system(.largeTitle, design: .rounded))
                 .bold()
-                .padding(.bottom,30)
-            FormField(fieldName: "Username", fieldValue: $username)
-            Requirement(text:"A minimum of 4 characters")
+                .padding(.bottom, 30)
+            
+            FormField(fieldName: "Username", fieldValue: $userRegistrationViewModel.username)
+            RequirementText(iconColor: userRegistrationViewModel.isUsernameLengthValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "A minimum of 4 characters", isStrikeThrough: userRegistrationViewModel.isUsernameLengthValid)
                 .padding()
             
-            FormField(fieldName: "Password", fieldValue: $password,isSecure: true)
+            FormField(fieldName: "Password", fieldValue: $userRegistrationViewModel.password, isSecure: true)
+
             VStack {
-                Requirement(iconName: "lock.open", text: "A minimum of 8 characters", isStrikeThrough: false)
-                Requirement(iconName: "lock.open", text: "One uppercase letter", isStrikeThrough: false)
+                RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordLengthValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "A minimum of 8 characters", isStrikeThrough: userRegistrationViewModel.isPasswordLengthValid)
+              
+                RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordCapitalLetter ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "One uppercase letter", isStrikeThrough: userRegistrationViewModel.isPasswordCapitalLetter)
             }
             .padding()
-            FormField(fieldName: "Confirm Password", fieldValue: $passwordConfirm, isSecure: true)
-            Requirement(text: "Your confirm password should be the same as password", isStrikeThrough: false)
+
+            FormField(fieldName: "Confirm Password", fieldValue: $userRegistrationViewModel.passwordConfirm, isSecure: true)
+
+            RequirementText(iconColor: userRegistrationViewModel.isPasswordConfirmValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "Your confirm password should be the same as password", isStrikeThrough: userRegistrationViewModel.isPasswordConfirmValid)
                 .padding()
                 .padding(.bottom, 50)
+            
             Button(action: {
                 // Proceed to the next screen
             }) {
@@ -46,8 +55,26 @@ struct RegisterationPage: View {
                     
             }
             
+            HStack {
+                Text("Already have an account?")
+                    .font(.system(.body, design: .rounded))
+                    .bold()
+                    
+                Button(action: {
+                    // Proceed to Sign in screen
+                }) {
+                    Text("Sign in")
+                        .font(.system(.body, design: .rounded))
+                        .bold()
+                        .foregroundColor(Color(red: 251/255, green: 128/255, blue: 128/255))
+                }
+            }.padding(.top, 50)
+            
+            Spacer()
         }
+        .padding()
     }
+    
 }
 
 #Preview {
@@ -57,28 +84,32 @@ struct RegisterationPage: View {
 struct FormField: View {
     var fieldName = ""
     @Binding var fieldValue: String
+    
     var isSecure = false
+    
     var body: some View {
+        
         VStack {
             if isSecure {
-             SecureField(fieldName, text: $fieldValue)
-                    .font(.system(size: 20,weight: .semibold ,design: .rounded))
+                SecureField(fieldName, text: $fieldValue)
+                    .font(.system(size: 20, weight: .semibold, design: .rounded))
                     .padding(.horizontal)
+                
             } else {
-                TextField(fieldName, text: $fieldValue)
-                    .font(.system(size: 20,weight: .semibold,design: .rounded))
+                TextField(fieldName, text: $fieldValue)                 .font(.system(size: 20, weight: .semibold, design: .rounded))
                     .padding(.horizontal)
             }
+
             Divider()
                 .frame(height: 1)
-                .background(Color(red: 240/255,green: 240/255,blue: 240/255))
+                .background(Color(red: 240/255, green: 240/255, blue: 240/255))
                 .padding(.horizontal)
+            
         }
-       
     }
 }
 
-struct Requirement: View {
+struct RequirementText: View {
     var iconName = "xmark.square"
     var iconColor = Color(red: 251/255, green: 128/255, blue: 128/255)
     var text = ""
