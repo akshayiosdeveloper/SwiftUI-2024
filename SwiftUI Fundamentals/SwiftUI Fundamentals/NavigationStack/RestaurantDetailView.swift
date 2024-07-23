@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RestaurantDetailView: View {
-    var restaurant: Restaurant
+    var restaurant: Restaurant2
     var body: some View {
         VStack {
             Image(restaurant.image)
@@ -23,5 +23,5 @@ struct RestaurantDetailView: View {
 }
 
 #Preview {
-    RestaurantDetailView(restaurant: Restaurant(name: "a", image: "caskpubkitchen"))
+    RestaurantDetailView(restaurant: Restaurant2(name: "a", image: "caskpubkitchen"))
 }

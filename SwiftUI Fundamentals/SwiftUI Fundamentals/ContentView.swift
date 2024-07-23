@@ -11,7 +11,8 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
-        RegisterationPage()
+        SwipeDelete()
+        //RegisterationPage()
       //SettingView()
       //  FormDemo().environmentObject(settingStore)
        // Form(<#FormStyleConfiguration#>)

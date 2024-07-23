@@ -30,6 +30,7 @@
 		D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A88E32B87AC1400EFB08F /* PathExercise.swift */; };
 		D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */; };
 		D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADF1EB2B81D2EF00699060 /* Paths.swift */; };
+		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
 		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
 		D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */; };
@@ -77,6 +78,7 @@
 		D09A88E32B87AC1400EFB08F /* PathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExercise.swift; sourceTree = "<group>"; };
 		D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterationModelView.swift; sourceTree = "<group>"; };
 		D0ADF1EB2B81D2EF00699060 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
 		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 		D0C78A912B4674420022FC0A /* SwiftUIFundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFundamentals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,14 @@
 			path = Excercise;
 			sourceTree = "<group>";
 		};
+		D0B6692E2C4E184000ED1F55 /* SwipeDelete */ = {
+			isa = PBXGroup;
+			children = (
+				D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */,
+			);
+			path = SwipeDelete;
+			sourceTree = "<group>";
+		};
 		D0C78A882B4674420022FC0A = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0B6692E2C4E184000ED1F55 /* SwipeDelete */,
 				D0D1FA022C47866E0043C9BB /* RegisterationPage */,
 				D03DCE202BEE43DE00B2C7DE /* Form1 */,
 				D0D6AF652BD12FCD001CC9EE /* Sheets */,
@@ -375,6 +386,7 @@
 				D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */,
 				D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */,
 				D0D6AF672BD12FF2001CC9EE /* SheetExample.swift in Sources */,
+				D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
