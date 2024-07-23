@@ -22,3 +22,5 @@ completed form chapter
 completed chapter 14 using combine and enviroment object
 adding registeration page
 done with registeration page
+start with swipe delete functionality
+done with this chapter 
