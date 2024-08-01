@@ -24,3 +24,4 @@ adding registeration page
 done with registeration page
 start with swipe delete functionality
 done with this chapter 
+start with gesture chapter 1 august 2024
