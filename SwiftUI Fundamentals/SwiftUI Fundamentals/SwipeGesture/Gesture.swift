@@ -6,56 +6,71 @@
 //
 
 import SwiftUI
-/*
-struct Gesture: View {
-    @State private var isPressed = false
-    @GestureState private var longPressTap = false
-    @GestureState private var dragOffset = CGSize.zero
-    @GestureState private var position = CGSize.zero
+enum DragState {
+    case inactive
+    case pressing
+    case dragging(translation: CGSize)
     
+    var translation: CGSize {
+        switch self {
+        case .inactive , .pressing:
+            return .zero
+           
+        case .dragging(let translation):
+            return translation
+        }
+    }
+    
+    var isPresenting: Bool {
+        switch self {
+        case .pressing,.dragging:
+            return true
+        case .inactive:
+            return false
+        }
+    }
+    
+    
+    var isPressing: Bool {
+        switch self {
+        case .pressing, .dragging:
+            return true
+        case .inactive:
+            return false
+        }
+    }
+    
+}
+struct Gesture: View {
+    @GestureState private var dragState = DragState.inactive
+    @State private var position = CGSize.zero
     var body: some View {
         Image(systemName: "star.circle.fill")
-            .font(.system(size: 200))
-            .offset(x: dragOffset.width ,y: dragOffset.height)
-            //.opacity(longPressTap ? 0.4 : 1.0)
-            //.scaleEffect(isPressed ? 0.5 : 1.0)
-            .animation(.easeInOut, value: dragOffset)
-            .foregroundColor(.green)
+            .font(.system(size: 100))
+            .opacity(dragState.isPressing ? 0.5 : 1.0)
+            .offset(x: position.width + dragState.translation.width, y: position.height + dragState.translation.height)
+            .animation(.easeInOut, value: dragState.translation) .foregroundColor(.green)
             .gesture(
-                /*
-                 // tap gesture
-                 TapGesture()
-                 .onEnded({
-                 self.isPressed.toggle()
-                 })
-                 */
-                /*
-                // Long press gesture
-                
                 LongPressGesture(minimumDuration: 1.0)
-                
-                    .updating($longPressTap, body: { (currentState, state, transaction) in state = currentState
-                    })
-                    .onEnded({ _ in
-                        self.isPressed.toggle()
-                    })
-                 */
-                
-                DragGesture()
-                    .updating($dragOffset, body: { value, state, transaction in
-                        state = value.translation
-                    })
+                    .sequenced(before: DragGesture())
+                    .updating($dragState, body: { (value, state, transaction) in
+                        switch value {
+                        case .first(true):
+                            state = .pressing
+                        case .second(true, let drag):
+                            state = .dragging(translation: drag?.translation ?? .zero) default:
+                            break } })
                     .onEnded({ (value) in
-//                        var pos =  self.position
-//                        pos.height = self.position.height + value.translation.height
-//                        self.position = pos
-//                        self.position.width += value.translation.width
-
+                        guard case .second(true, let drag?) = value else {
+                            return
+                        }
+                        self.position.height += drag.translation.height
+                        self.position.width += drag.translation.width
                     })
-            )
-    }
+            ) }
 }
-*/
+/*
+// without enum implmentation
 struct Gesture:View {
     @GestureState private var isPressed = false
        // For drag gesture
@@ -94,8 +109,9 @@ struct Gesture:View {
             )
         
     }
-                
-}
+ }
+   */
+
 
 #Preview {
     Gesture()
