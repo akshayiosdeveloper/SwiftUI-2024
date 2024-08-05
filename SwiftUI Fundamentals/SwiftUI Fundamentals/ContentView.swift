@@ -11,7 +11,9 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
-        Gesture()
+        BottomSheetDemo()
+       // BasicBottomSheet()
+       // Gesture()
       //  SwipeDelete()
         //RegisterationPage()
       //SettingView()
