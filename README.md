@@ -26,4 +26,5 @@ start with swipe delete functionality
 done with this chapter 
 start with gesture chapter 1 august 2024
 done with gesture chapter 5 august 2024
-started a new chapter presenation detents 
+started a new chapter presenation detents
+done with presentation detents chapter
