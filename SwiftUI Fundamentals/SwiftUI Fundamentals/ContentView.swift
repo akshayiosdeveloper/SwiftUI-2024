@@ -11,7 +11,11 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
-        BottomSheetDemo()
+        TinderHome()
+        //TopBarMenu()
+//        let trip = trips[0]
+//        TinderCardView(image: trip.image, title: trip.destination)
+       // BottomSheetDemo()
        // BasicBottomSheet()
        // Gesture()
       //  SwipeDelete()
