@@ -11,6 +11,7 @@ struct TinderHome: View {
     @GestureState private var dragState = DragState.inactive
     private let dragThreshold: CGFloat = 80.0
     @State private var lastIndex = 1
+    @State private var removalTransition = AnyTransition.trailingBottom
     @State var cardViews:[TinderCardView] = {
         var views = [TinderCardView]()
         for index in 0..<2 {
@@ -41,16 +42,16 @@ struct TinderHome: View {
                 cardView.zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
                     .overlay {
                         ZStack {
-                    Image(systemName: "x.circle")
-                    .foregroundColor(.white)
-                    .font(.system(size: 100))
-                    .opacity(self.dragState.translation.width < -self.dragThreshold && self
-                    .isTopCard(cardView: cardView) ? 1.0 : 0)
-                    Image(systemName: "heart.circle")
-                    .foregroundColor(.white)
-                    .font(.system(size: 100))
-                    .opacity(self.dragState.translation.width > self.dragThreshold && self
-                    .isTopCard(cardView: cardView) ? 1.0 : 0.0)
+                            Image(systemName: "x.circle")
+                                .foregroundColor(.white)
+                                .font(.system(size: 100))
+                                .opacity(self.dragState.translation.width < -self.dragThreshold && self
+                                    .isTopCard(cardView: cardView) ? 1.0 : 0)
+                            Image(systemName: "heart.circle")
+                                .foregroundColor(.white)
+                                .font(.system(size: 100))
+                                .opacity(self.dragState.translation.width > self.dragThreshold && self
+                                    .isTopCard(cardView: cardView) ? 1.0 : 0.0)
                         }
                     }
                     .offset(x: self.isTopCard(cardView: cardView) ? self.dragState.translation.width : 0, y: self.isTopCard(cardView: cardView) ? self.dragState.translation .height : 0)
@@ -58,6 +59,7 @@ struct TinderHome: View {
                     .rotationEffect(Angle(degrees: self.isTopCard(cardView: cardView) ? Double( self.dragState.translation.width / 10) : 0))
                 
                     .animation(.interpolatingSpring(stiffness: 180, damping: 100), value: self.dragState.translation)
+                    .transition(self.removalTransition)
                 
                     .gesture(LongPressGesture(minimumDuration: 0.01) .sequenced(before: DragGesture()) .updating(self.$dragState, body: { (value, state, transaction) in
                         switch value {
@@ -68,21 +70,32 @@ struct TinderHome: View {
                         default:
                             break
                         }
-                    
+                        
                         
                     })
-                        .onEnded({ (value) in
+                             
+                        .onChanged({ (value) in
                             guard case .second(true, let drag?) = value else {
                                 return
-                                
                             }
-                            if drag.translation.width < -self.dragThreshold ||
-                                drag.translation.width > self.dragThreshold {
-                                
-                                //
-                                self.moveCard()
+                            if drag.translation.width < -self.dragThreshold {
+                                self.removalTransition = .leadingBottom
                             }
-                        })
+                            if drag.translation.width > self.dragThreshold {
+                                self.removalTransition = .trailingBottom
+                            } })
+                            .onEnded({ (value) in
+                                guard case .second(true, let drag?) = value else {
+                                    return
+                                    
+                                }
+                                if drag.translation.width < -self.dragThreshold ||
+                                    drag.translation.width > self.dragThreshold {
+                                    
+                                    //
+                                    self.moveCard()
+                                }
+                            })
                              
                              
                     )
@@ -95,7 +108,22 @@ struct TinderHome: View {
     }
     
 }
-
 #Preview {
     TinderHome()
 }
+extension AnyTransition {
+    static var trailingBottom: AnyTransition {
+        AnyTransition.asymmetric(
+            insertion: .identity,
+            removal: AnyTransition.move(edge: .trailing).combined(with: .move(edge
+                                                                              : .bottom)) )
+        
+    }
+    static var leadingBottom: AnyTransition {
+        AnyTransition.asymmetric(
+            insertion: .identity,
+            removal: AnyTransition.move(edge: .leading).combined(with: .move(edge:
+                                                                                
+                    .bottom)) )
+    } }
+
