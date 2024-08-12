@@ -40,6 +40,14 @@ enum DragState {
         }
     }
     
+    var isDragging: Bool {
+            switch self {
+            case .dragging:
+                return true
+            case .pressing, .inactive:
+                return false
+    }
+    }
 }
 struct Gesture: View {
     @GestureState private var dragState = DragState.inactive
