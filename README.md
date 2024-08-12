@@ -29,3 +29,4 @@ done with gesture chapter 5 august 2024
 started a new chapter presenation detents
 done with presentation detents chapter
 started tinder trip app on 8 august
+done with tinder trip  on 12 august
