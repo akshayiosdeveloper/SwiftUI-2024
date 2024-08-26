@@ -11,7 +11,8 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
-        TinderHome()
+        WalletApp()
+       // TinderHome()
         //TopBarMenu()
 //        let trip = trips[0]
 //        TinderCardView(image: trip.image, title: trip.destination)

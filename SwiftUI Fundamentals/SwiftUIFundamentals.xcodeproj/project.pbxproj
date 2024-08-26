@@ -40,6 +40,11 @@
 		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
 		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
+		D0C5C09F2C7C837C002E3C34 /* WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5C09E2C7C837C002E3C34 /* WalletApp.swift */; };
+		D0C5C0A12C7C840A002E3C34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5C0A02C7C840A002E3C34 /* Card.swift */; };
+		D0C5C0A32C7C84DC002E3C34 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5C0A22C7C84DC002E3C34 /* Transaction.swift */; };
+		D0C5C0A62C7C8755002E3C34 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5C0A52C7C8755002E3C34 /* CardLayout.swift */; };
+		D0C5C0A82C7C8C69002E3C34 /* TopNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C5C0A72C7C8C69002E3C34 /* TopNavBar.swift */; };
 		D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */; };
 		D0C78A972B4674420022FC0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C78A962B4674420022FC0A /* ContentView.swift */; };
 		D0C78A992B4674430022FC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C78A982B4674430022FC0A /* Assets.xcassets */; };
@@ -97,6 +102,11 @@
 		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
 		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
+		D0C5C09E2C7C837C002E3C34 /* WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletApp.swift; sourceTree = "<group>"; };
+		D0C5C0A02C7C840A002E3C34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D0C5C0A22C7C84DC002E3C34 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D0C5C0A52C7C8755002E3C34 /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
+		D0C5C0A72C7C8C69002E3C34 /* TopNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavBar.swift; sourceTree = "<group>"; };
 		D0C78A912B4674420022FC0A /* SwiftUIFundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFundamentals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C78A942B4674420022FC0A /* SwiftUI_FundamentalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_FundamentalsApp.swift; sourceTree = "<group>"; };
 		D0C78A962B4674420022FC0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -219,6 +229,26 @@
 			path = SwipeDelete;
 			sourceTree = "<group>";
 		};
+		D0C5C09D2C7C835F002E3C34 /* WalletApp */ = {
+			isa = PBXGroup;
+			children = (
+				D0C5C0A42C7C873C002E3C34 /* View */,
+				D0C5C09E2C7C837C002E3C34 /* WalletApp.swift */,
+				D0C5C0A02C7C840A002E3C34 /* Card.swift */,
+				D0C5C0A22C7C84DC002E3C34 /* Transaction.swift */,
+			);
+			path = WalletApp;
+			sourceTree = "<group>";
+		};
+		D0C5C0A42C7C873C002E3C34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0C5C0A52C7C8755002E3C34 /* CardLayout.swift */,
+				D0C5C0A72C7C8C69002E3C34 /* TopNavBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D0C78A882B4674420022FC0A = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +270,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0C5C09D2C7C835F002E3C34 /* WalletApp */,
 				D0A73ECD2C648C6D00C6C60C /* Tinder */,
 				D0EBCDBC2C6095720045C877 /* PresentationDetents */,
 				D0A7B4C32C5B47F600B663CD /* SwipeGesture */,
@@ -412,15 +443,18 @@
 				D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */,
 				D0A73ED12C648E1200C6C60C /* TinderCardView.swift in Sources */,
 				D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */,
+				D0C5C09F2C7C837C002E3C34 /* WalletApp.swift in Sources */,
 				D0A73ED32C64929E00C6C60C /* TopBarMenu.swift in Sources */,
 				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D061B5552C65FC0100A34991 /* BottomBarMenu.swift in Sources */,
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
+				D0C5C0A62C7C8755002E3C34 /* CardLayout.swift in Sources */,
 				D0A73ECF2C648CE300C6C60C /* Trip.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
 				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
+				D0C5C0A32C7C84DC002E3C34 /* Transaction.swift in Sources */,
 				D03DCE222BEE43EF00B2C7DE /* Form.swift in Sources */,
 				D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
@@ -435,10 +469,12 @@
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D0A73ED52C6494CD00C6C60C /* TinderHome.swift in Sources */,
 				D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */,
+				D0C5C0A12C7C840A002E3C34 /* Card.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D0EBCDC02C6097C20045C877 /* BottomSheetDemo.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
 				D0A7B4C52C5B480E00B663CD /* Gesture.swift in Sources */,
+				D0C5C0A82C7C8C69002E3C34 /* TopNavBar.swift in Sources */,
 				D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */,
 				D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
