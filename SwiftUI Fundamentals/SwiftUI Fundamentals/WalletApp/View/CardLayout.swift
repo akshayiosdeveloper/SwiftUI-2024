@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardLayout: View {
+  
     var card: Card
     var body: some View {
         Image(card.image)
