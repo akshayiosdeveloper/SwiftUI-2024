@@ -32,4 +32,5 @@ started tinder trip app on 8 august
 done with tinder trip  on 12 august
 final touches to tinder trip app
 started new chapter 20 based on apple wallet design
+done with wallet app
 
