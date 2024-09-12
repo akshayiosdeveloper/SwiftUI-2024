@@ -11,7 +11,8 @@ struct ContentView: View {
     var settingStore = SettingStore()
 
     var body: some View {
-        WalletApp()
+        KivaApp()
+       // WalletApp()
        // TinderHome()
         //TopBarMenu()
 //        let trip = trips[0]
