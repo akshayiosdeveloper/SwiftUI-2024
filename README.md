@@ -33,4 +33,6 @@ done with tinder trip  on 12 august
 final touches to tinder trip app
 started new chapter 20 based on apple wallet design
 done with wallet app
+Stared loan app to learn about json data structure 12 september started
+Done with json and encoding and decoding chapter
 
