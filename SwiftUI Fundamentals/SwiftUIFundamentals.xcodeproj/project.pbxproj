@@ -58,6 +58,7 @@
 		D0EBA9952C92AED3009B44C1 /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBA9942C92AED3009B44C1 /* LoanCellView.swift */; };
 		D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBCDBD2C6095A00045C877 /* BasicBottomSheet.swift */; };
 		D0EBCDC02C6097C20045C877 /* BottomSheetDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBCDBF2C6097C20045C877 /* BottomSheetDemo.swift */; };
+		D0EDFA742C93F312000BDB25 /* LoanFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EDFA732C93F312000BDB25 /* LoanFilterView.swift */; };
 		D0F8A2322B58306C00C138CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F8A2312B58306C00C138CA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,7 @@
 		D0EBA9942C92AED3009B44C1 /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
 		D0EBCDBD2C6095A00045C877 /* BasicBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBottomSheet.swift; sourceTree = "<group>"; };
 		D0EBCDBF2C6097C20045C877 /* BottomSheetDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDemo.swift; sourceTree = "<group>"; };
+		D0EDFA732C93F312000BDB25 /* LoanFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFilterView.swift; sourceTree = "<group>"; };
 		D0F8A2312B58306C00C138CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,6 +338,7 @@
 				D0EBA98D2C92A992009B44C1 /* KivaApp.swift */,
 				D0EBA98F2C92A9C0009B44C1 /* Loan.swift */,
 				D0EBA9912C92AAAB009B44C1 /* LoanStore.swift */,
+				D0EDFA732C93F312000BDB25 /* LoanFilterView.swift */,
 			);
 			path = JSONDecoder;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D0EBA98E2C92A992009B44C1 /* KivaApp.swift in Sources */,
 				D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */,
+				D0EDFA742C93F312000BDB25 /* LoanFilterView.swift in Sources */,
 				D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */,
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D0A73ED52C6494CD00C6C60C /* TinderHome.swift in Sources */,

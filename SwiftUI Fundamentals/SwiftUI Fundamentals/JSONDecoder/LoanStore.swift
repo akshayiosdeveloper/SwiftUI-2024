@@ -8,7 +8,8 @@
 import Foundation
 
 class LoanStore : Decodable,ObservableObject {
-  @Published var loans: [Loan] = []
+    private var cachedLoans: [Loan] = []
+    @Published var loans: [Loan] = []
     private static var kivaLoanURL = "https://api.kivaws.org/v1/loans/newest.json"
     init() {
         
@@ -32,11 +33,11 @@ class LoanStore : Decodable,ObservableObject {
                 print(error)
                 return
             }
-            print(response)
             // Parse JSON data
             if let data = data {
                 DispatchQueue.main.async {
                     self.loans = self.parseJsonData(data: data)
+                    self.cachedLoans = self.loans
                 }
             } })
         task.resume()
@@ -51,5 +52,9 @@ class LoanStore : Decodable,ObservableObject {
             print(error)
         }
         return loans
+    }
+    
+    func filterLoans(maxAmount: Int) {
+    self.loans = self.cachedLoans.filter { $0.amount < maxAmount }
     }
 }
