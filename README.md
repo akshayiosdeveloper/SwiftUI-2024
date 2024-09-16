@@ -35,4 +35,5 @@ started new chapter 20 based on apple wallet design
 done with wallet app
 Stared loan app to learn about json data structure 12 september started
 Done with json and encoding and decoding chapter
+Started new todo app using core data on 13 sep 2024
 
