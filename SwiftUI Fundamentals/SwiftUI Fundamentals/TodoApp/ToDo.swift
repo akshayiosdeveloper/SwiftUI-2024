@@ -35,10 +35,17 @@ struct ToDo: View {
                 List {
                     ForEach(todoItems) { todoItem in
                        // show list view
+                        ToDoListRow(todoItem: todoItem)
                     }
                 }
                 .listStyle(.plain)
             } // end of vstack
+            .rotation3DEffect(Angle(degrees: showNewTask ? 5 : 0), axis: (x: 1, y: 0, z: 0))
+            .offset(y: showNewTask ? -50 : 0)
+            .animation(.easeOut, value: showNewTask)
+            .onAppear {
+                UITableView.appearance().separatorColor = .clear
+            }
             // if there is no data , show empty view
             if todoItems.count == 0 {
                 // nodataview()

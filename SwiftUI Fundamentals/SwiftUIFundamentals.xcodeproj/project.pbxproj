@@ -13,6 +13,8 @@
 		D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B75AD2B8EFCDC005A2412 /* Animation.swift */; };
 		D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97D92B4D15F2006500C1 /* ImageView.swift */; };
 		D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */; };
+		D02FB4302C9949FE000A025C /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FB42F2C9949FE000A025C /* ToDoListRow.swift */; };
+		D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FB4332C994BC8000A025C /* CheckboxStyle.swift */; };
 		D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */; };
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
 		D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B81CF2C37E9BE00A68EC9 /* SettingStore.swift */; };
@@ -84,6 +86,8 @@
 		D02B75AD2B8EFCDC005A2412 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		D02E97D92B4D15F2006500C1 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutInterface.swift; sourceTree = "<group>"; };
+		D02FB42F2C9949FE000A025C /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
+		D02FB4332C994BC8000A025C /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLoader.swift; sourceTree = "<group>"; };
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
 		D03B81CF2C37E9BE00A68EC9 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
@@ -404,6 +408,8 @@
 			isa = PBXGroup;
 			children = (
 				D02478892C98003700DE5910 /* NewToDoView.swift */,
+				D02FB42F2C9949FE000A025C /* ToDoListRow.swift */,
+				D02FB4332C994BC8000A025C /* CheckboxStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,6 +529,7 @@
 				D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */,
 				D0EBA9922C92AAAB009B44C1 /* LoanStore.swift in Sources */,
 				D0C5C09F2C7C837C002E3C34 /* WalletApp.swift in Sources */,
+				D02FB4302C9949FE000A025C /* ToDoListRow.swift in Sources */,
 				D0A73ED32C64929E00C6C60C /* TopBarMenu.swift in Sources */,
 				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D0EDFA7A2C93FB09000BDB25 /* Model.xcdatamodeld in Sources */,
@@ -530,6 +537,7 @@
 				D0C78A972B4674420022FC0A /* ContentView.swift in Sources */,
 				D0C5C0A62C7C8755002E3C34 /* CardLayout.swift in Sources */,
 				D0A73ECF2C648CE300C6C60C /* Trip.swift in Sources */,
+				D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */,
 				D0EBA9902C92A9C0009B44C1 /* Loan.swift in Sources */,

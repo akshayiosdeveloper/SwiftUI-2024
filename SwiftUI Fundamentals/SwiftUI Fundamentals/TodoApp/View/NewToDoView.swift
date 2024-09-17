@@ -50,11 +50,68 @@ struct NewToDoView: View {
                 HStack {
                     Text("High")
                         .font(.system(.headline, design: .rounded))
+                        .padding(10)
+                        .background(priority == .high ? Color.red : Color(.systemGray4))
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .onTapGesture {
+                            self.priority = .high
+                        }
+                    // normal
+                    Text("Normal")
+                        .font(.system(.headline, design: .rounded))
+                        .padding(10)
+                        .background(priority == .normal ? Color.orange : Color(.systemGray4))
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .onTapGesture {
+                            self.priority = .normal
+                        }
+                    // Low
+                    Text("Low")
+                        .font(.system(.headline, design: .rounded))
+                        .padding(10)
+                        .background(priority == .low ? Color.green : Color(.systemGray4))
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .onTapGesture {
+                            self.priority = .low
+                        }
                 }
+                .padding(.bottom , 30)
+                // Save button for adding the todo item
+                Button(action: {
+                    
+                    if self.name.trimmingCharacters(in: .whitespaces) == "" {
+                        return
+                    }
+                    
+                    self.isShow = false
+                    self.addTask(name: self.name, priority: self.priority)
+                    
+                }) {
+                    Text("Save")
+                        .font(.system(.headline, design: .rounded))
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.purple)
+                        .cornerRadius(10)
+                }
+                .padding(.bottom)
                 
                 
             }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10, antialiased: true)
+            .offset(y: isEditing ? -320 : 0)
         }
+    }
+    private func addTask(name: String, priority: Priority, isComplete: Bool = false) {
+        
+        let task = ToDoItem(name: name, priority: priority, isComplete: isComplete)
+        todoItems.append(task)
     }
 }
 
