@@ -37,4 +37,5 @@ Stared loan app to learn about json data structure 12 september started
 Done with json and encoding and decoding chapter
 Started new todo app using core data on 13 sep 2024
 Added todo item screen in coredata app (todo app)
+Add logic for showing todo items in todo app 
 
