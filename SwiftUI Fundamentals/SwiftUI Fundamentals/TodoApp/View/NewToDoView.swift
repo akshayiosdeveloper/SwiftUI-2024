@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct NewToDoView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @Binding var isShow: Bool
-    @Binding var todoItems: [ToDoItem]
+  //  @Binding var todoItems: [ToDoItem]
     
     @State var name: String
     @State var priority: Priority
@@ -105,16 +106,27 @@ struct NewToDoView: View {
             .padding()
             .background(Color.white)
             .cornerRadius(10, antialiased: true)
-            .offset(y: isEditing ? -320 : 0)
+            .offset(y: isEditing ? -110 : 0)
         }
     }
     private func addTask(name: String, priority: Priority, isComplete: Bool = false) {
+        let task = ToDoMenu(context: viewContext)
+        task.id = UUID()
+        task.name = name
+        task.priority = priority
+        task.isComplete = isComplete
         
-        let task = ToDoItem(name: name, priority: priority, isComplete: isComplete)
-        todoItems.append(task)
+        do  {
+            try viewContext.save()
+        } catch {
+            print(error)
+        }
+        
+       // let task = ToDoItem(name: name, priority: priority, isComplete: isComplete)
+       // todoItems.append(task)
     }
 }
 
 #Preview {
-    NewToDoView(isShow: .constant(true), todoItems: .constant([]), name: "", priority: .normal)
+    NewToDoView(isShow: .constant(true), name: "", priority: .normal)
 }
