@@ -9,10 +9,10 @@ import SwiftUI
 import CoreData
 struct ToDo: View {
     @Environment(\.managedObjectContext) private var viewContext
-    
     @State private var newItem: String = ""
     @State private var newItemPriority: Priority = .normal
     @State private var showNewTask = false
+    @State private var searchText = ""
    
     //@State var todoItems:[ToDoItem] = []
     @FetchRequest(entity: ToDoMenu.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \ToDoMenu.priorityNum, ascending: false)])
@@ -34,10 +34,18 @@ struct ToDo: View {
                     })
                 }
                 .padding()
+                // Add search bar
+                SearchBar(text: $searchText)
+                    .padding(.top,-20)
                 //show list view
                 List {
+                    /*
                     ForEach(todoItems) { todoItem in
                        // show list view
+                        ToDoListRow(todoItem: todoItem)
+                    }
+                     */
+                    ForEach(todoItems.filter( {searchText.isEmpty ? true : $0.name.contains(searchText)})) { todoItem in
                         ToDoListRow(todoItem: todoItem)
                     }
                     .onDelete(perform: { indexSet in
@@ -46,6 +54,7 @@ struct ToDo: View {
 
                 }
                 .listStyle(.plain)
+                
 
             } // end of vstack
             .rotation3DEffect(Angle(degrees: showNewTask ? 5 : 0), axis: (x: 1, y: 0, z: 0))
