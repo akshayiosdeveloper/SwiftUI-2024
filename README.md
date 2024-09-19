@@ -39,4 +39,5 @@ Started new todo app using core data on 13 sep 2024
 Added todo item screen in coredata app (todo app)
 Add logic for showing todo items in todo app 
 Done with core data app (todo app)
+Add search view and search locally in the todo items in core data todo app
 
