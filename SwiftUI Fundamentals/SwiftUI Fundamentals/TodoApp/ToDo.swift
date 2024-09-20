@@ -8,15 +8,16 @@
 import SwiftUI
 import CoreData
 struct ToDo: View {
-    @Environment(\.managedObjectContext) private var viewContext
+   // @Environment(\.managedObjectContext) private var viewContext
     @State private var newItem: String = ""
     @State private var newItemPriority: Priority = .normal
     @State private var showNewTask = false
     @State private var searchText = ""
    
     //@State var todoItems:[ToDoItem] = []
-    @FetchRequest(entity: ToDoMenu.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \ToDoMenu.priorityNum, ascending: false)])
-    var todoItems: FetchedResults<ToDoMenu>
+//    @FetchRequest(entity: ToDoMenu.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \ToDoMenu.priorityNum, ascending: false)],predicate: NSPredicate(format: "name CONTAINS[c] %@", "S"))
+  //var todoItems: FetchedResults<ToDoMenu>
+    
     
     var body: some View {
         ZStack {
@@ -38,22 +39,28 @@ struct ToDo: View {
                 SearchBar(text: $searchText)
                     .padding(.top,-20)
                 //show list view
-                List {
+               // List {
                     /*
+                     
+                     normal function for showing list of todo items
                     ForEach(todoItems) { todoItem in
                        // show list view
                         ToDoListRow(todoItem: todoItem)
                     }
                      */
+                    
+                    /* showing list using search filter feature is using  todo array*/
+                    /*
                     ForEach(todoItems.filter( {searchText.isEmpty ? true : $0.name.contains(searchText)})) { todoItem in
                         ToDoListRow(todoItem: todoItem)
                     }
-                    .onDelete(perform: { indexSet in
-                        self.deleteTask(indexSet: indexSet)
-                    })
+                    */
+                    /* Search using fetch request in coredata */
+                    FilteredList($searchText)
+                    
 
-                }
-                .listStyle(.plain)
+//                }
+//                .listStyle(.plain)
                 
 
             } // end of vstack
@@ -63,11 +70,7 @@ struct ToDo: View {
             .onAppear {
                 UITableView.appearance().separatorColor = .clear
             }
-            // if there is no data , show empty view
-            if todoItems.count == 0 {
-                // nodataview()
-                NoDataView()
-            }
+           
             // Display the "Add new todo" view
             if showNewTask {
                 //add view
@@ -84,19 +87,7 @@ struct ToDo: View {
             }
         }
     }
-    private func deleteTask(indexSet: IndexSet) {
-        for index in indexSet {
-            let itemToDelete = todoItems[index]
-            viewContext.delete(itemToDelete)
-        }
-        DispatchQueue.main.async {
-            do {
-                try viewContext.save()
-            } catch {
-                print(error)
-            }
-        }
-    }
+ 
 }
 
 struct NoDataView: View {

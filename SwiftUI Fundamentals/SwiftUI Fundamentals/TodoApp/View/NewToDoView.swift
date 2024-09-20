@@ -118,6 +118,7 @@ struct NewToDoView: View {
         
         do  {
             try viewContext.save()
+            print("data savved")
         } catch {
             print(error)
         }
