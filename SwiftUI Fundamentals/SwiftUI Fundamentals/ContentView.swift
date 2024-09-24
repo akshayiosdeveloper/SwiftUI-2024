@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var settingStore = SettingStore()
-
+    @State private var searchText = ""
     var body: some View {
-        KivaApp()
+        CustomSearchBar(text: $searchText)
+       // KivaApp()
        // WalletApp()
        // TinderHome()
         //TopBarMenu()

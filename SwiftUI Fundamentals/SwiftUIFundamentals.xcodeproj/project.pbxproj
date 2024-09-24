@@ -30,6 +30,7 @@
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
+		D081E70B2CA2D85E008C18A9 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E70A2CA2D85E008C18A9 /* CustomSearchBar.swift */; };
 		D087C8E52BA2C4E600503815 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087C8E42BA2C4E600503815 /* ListView.swift */; };
 		D091B4142BF726D300096F6D /* SwiftUIFundamentalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */; };
 		D091B4162BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4152BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift */; };
@@ -106,6 +107,7 @@
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
+		D081E70A2CA2D85E008C18A9 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		D087C8E42BA2C4E600503815 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D091B4112BF726D300096F6D /* SwiftUIFundamentalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFundamentalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFundamentalsUITests.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 				D049B6AB2BC658C200229295 /* RestaurantDetailView.swift */,
 			);
 			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		D081E7072CA2D831008C18A9 /* CustomSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				D081E70A2CA2D85E008C18A9 /* CustomSearchBar.swift */,
+			);
+			path = CustomSearchBar;
 			sourceTree = "<group>";
 		};
 		D087C8E32BA2C4D600503815 /* ListView */ = {
@@ -300,6 +310,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D081E7072CA2D831008C18A9 /* CustomSearchBar */,
 				D0EDFA752C93F8FC000BDB25 /* TodoApp */,
 				D0EBA98C2C92A91B009B44C1 /* JSONDecoder */,
 				D0C5C09D2C7C835F002E3C34 /* WalletApp */,
@@ -534,6 +545,7 @@
 			files = (
 				D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */,
 				D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */,
+				D081E70B2CA2D85E008C18A9 /* CustomSearchBar.swift in Sources */,
 				D0A73ED12C648E1200C6C60C /* TinderCardView.swift in Sources */,
 				D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */,
 				D0EBA9922C92AAAB009B44C1 /* LoanStore.swift in Sources */,
