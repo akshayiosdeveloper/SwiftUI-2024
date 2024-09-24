@@ -41,4 +41,6 @@ Add logic for showing todo items in todo app
 Done with core data app (todo app)
 Add search view and search locally in the todo items in core data todo app
 done with todo app in coredata 
+Started with custom search bar 
+done with the custom bar chapter 24 
 
