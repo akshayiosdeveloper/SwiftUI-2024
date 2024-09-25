@@ -43,4 +43,5 @@ Add search view and search locally in the todo items in core data todo app
 done with todo app in coredata 
 Started with custom search bar 
 done with the custom bar chapter 24 
+started working on finance app 25 september 
 
