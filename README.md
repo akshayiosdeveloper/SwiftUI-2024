@@ -44,4 +44,5 @@ done with todo app in coredata
 Started with custom search bar 
 done with the custom bar chapter 24 
 started working on finance app 25 september 
+setup core data stack 
 
