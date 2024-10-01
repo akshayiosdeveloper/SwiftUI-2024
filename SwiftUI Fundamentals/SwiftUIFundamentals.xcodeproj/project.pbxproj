@@ -41,6 +41,7 @@
 		D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A13F72B89C902005A2DA0 /* Loader.swift */; };
 		D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A88E32B87AC1400EFB08F /* PathExercise.swift */; };
 		D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */; };
+		D0A595F52CAC092E00053918 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */; };
 		D0A73ECF2C648CE300C6C60C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A73ECE2C648CE300C6C60C /* Trip.swift */; };
 		D0A73ED12C648E1200C6C60C /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A73ED02C648E1200C6C60C /* TinderCardView.swift */; };
 		D0A73ED32C64929E00C6C60C /* TopBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A73ED22C64929E00C6C60C /* TopBarMenu.swift */; };
@@ -127,6 +128,7 @@
 		D09A13F72B89C902005A2DA0 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		D09A88E32B87AC1400EFB08F /* PathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExercise.swift; sourceTree = "<group>"; };
 		D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterationModelView.swift; sourceTree = "<group>"; };
+		D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		D0A73ECE2C648CE300C6C60C /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		D0A73ED02C648E1200C6C60C /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
 		D0A73ED22C64929E00C6C60C /* TopBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarMenu.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		D066C3F62CA53E8A00FCA814 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */,
 				D066C3FD2CA540F000FCA814 /* DashboardView.swift */,
 				D0ABAE792CAA564F000D7BD3 /* PaymentFormView.swift */,
 			);
@@ -656,6 +659,7 @@
 				D087C8E52BA2C4E600503815 /* ListView.swift in Sources */,
 				D024788A2C98003700DE5910 /* NewToDoView.swift in Sources */,
 				D0D6AF692BD13303001CC9EE /* ArticleDetailView.swift in Sources */,
+				D0A595F52CAC092E00053918 /* KeyboardAdaptive.swift in Sources */,
 				D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */,
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D0EBA98E2C92A992009B44C1 /* KivaApp.swift in Sources */,

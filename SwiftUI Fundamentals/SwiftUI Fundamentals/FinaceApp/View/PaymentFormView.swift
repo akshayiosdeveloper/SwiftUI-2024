@@ -132,6 +132,26 @@ struct PaymentFormView: View {
         .keyboardAdaptive()
         
     }
+    
+    // Save the record using Core Data
+    private func save() {
+        let newPayment = payment ?? PaymentActivity(context: context)
+        
+        newPayment.paymentId = UUID()
+        newPayment.name = paymentFormViewModel.name
+        newPayment.type = paymentFormViewModel.type
+        newPayment.date = paymentFormViewModel.date
+        newPayment.amount = Double(paymentFormViewModel.amount)!
+        newPayment.address = paymentFormViewModel.location
+        newPayment.memo = paymentFormViewModel.memo
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed to save the record...")
+            print(error.localizedDescription)
+        }
+    }
 }
 
 //#Preview {
