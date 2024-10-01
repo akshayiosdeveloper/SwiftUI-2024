@@ -46,4 +46,5 @@ done with the custom bar chapter 24
 started working on finance app 25 september 
 setup core data stack 
 add view model and validation methods
+save method
 
