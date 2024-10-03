@@ -38,6 +38,8 @@
 		D087C8E52BA2C4E600503815 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087C8E42BA2C4E600503815 /* ListView.swift */; };
 		D091B4142BF726D300096F6D /* SwiftUIFundamentalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */; };
 		D091B4162BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4152BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift */; };
+		D0926E132CAE5A990036F103 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0926E122CAE5A990036F103 /* PaymentDetailView.swift */; };
+		D0926E192CAE5B540036F103 /* PaymentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0926E182CAE5B540036F103 /* PaymentDetailViewModel.swift */; };
 		D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A13F72B89C902005A2DA0 /* Loader.swift */; };
 		D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A88E32B87AC1400EFB08F /* PathExercise.swift */; };
 		D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */; };
@@ -125,6 +127,8 @@
 		D091B4112BF726D300096F6D /* SwiftUIFundamentalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFundamentalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFundamentalsUITests.swift; sourceTree = "<group>"; };
 		D091B4152BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFundamentalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0926E122CAE5A990036F103 /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
+		D0926E182CAE5B540036F103 /* PaymentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewModel.swift; sourceTree = "<group>"; };
 		D09A13F72B89C902005A2DA0 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		D09A88E32B87AC1400EFB08F /* PathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExercise.swift; sourceTree = "<group>"; };
 		D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterationModelView.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		D066C3F52CA53E8000FCA814 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D0926E182CAE5B540036F103 /* PaymentDetailViewModel.swift */,
 				D0ABAE7D2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift */,
 			);
 			path = ViewModel;
@@ -244,6 +249,7 @@
 				D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */,
 				D066C3FD2CA540F000FCA814 /* DashboardView.swift */,
 				D0ABAE792CAA564F000D7BD3 /* PaymentFormView.swift */,
+				D0926E122CAE5A990036F103 /* PaymentDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -618,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0926E192CAE5B540036F103 /* PaymentDetailViewModel.swift in Sources */,
 				D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */,
 				D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */,
 				D081E70B2CA2D85E008C18A9 /* CustomSearchBar.swift in Sources */,
@@ -660,6 +667,7 @@
 				D024788A2C98003700DE5910 /* NewToDoView.swift in Sources */,
 				D0D6AF692BD13303001CC9EE /* ArticleDetailView.swift in Sources */,
 				D0A595F52CAC092E00053918 /* KeyboardAdaptive.swift in Sources */,
+				D0926E132CAE5A990036F103 /* PaymentDetailView.swift in Sources */,
 				D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */,
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D0EBA98E2C92A992009B44C1 /* KivaApp.swift in Sources */,

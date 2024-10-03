@@ -17,10 +17,10 @@ enum PaymentCategory: Int {
 public class PaymentActivity: NSManagedObject {
     @NSManaged public var address: String?
     @NSManaged public var amount: Double
-    @NSManaged public var date: Date?
+    @NSManaged public var date: Date
     @NSManaged public var memo: String?
-    @NSManaged public var name: String?
-    @NSManaged public var paymentId: UUID?
+    @NSManaged public var name: String
+    @NSManaged public var paymentId: UUID
     @NSManaged public var typeNum: Int32
 
 }
