@@ -48,4 +48,5 @@ setup core data stack
 add view model and validation methods
 save method
 add detail view
+added menu bar and expense card in dashboard view 
 
