@@ -83,6 +83,40 @@ struct DashboardView: View {
                         ExpenseCard(expense: totalExpense)
                     }
                     .padding(.bottom)
+                    // Transaction type
+                    TransactionHeader(listType: $listType)
+                        .padding(.bottom)
+                    // List the transaction records
+                    ForEach(paymentDataForView) { transaction in
+                        TransactionCellView(transaction: transaction)
+                            .onTapGesture {
+                                self.showPaymentDetails = true
+                                self.selectedPaymentActivity = transaction
+                            }
+                            .contextMenu {
+                                Button(action: {
+                                    // Edit payment details
+                                    self.editPaymentDetails = true
+                                    self.selectedPaymentActivity = transaction
+                                    
+                                }) {
+                                    HStack {
+                                        Text("Edit")
+                                        Image(systemName: "pencil")
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    // Delete the selected payment
+                                    //self.delete(payment: transaction)
+                                }) {
+                                    HStack {
+                                        Text("Delete")
+                                        Image(systemName: "trash")
+                                    }
+                                }
+                            }
+                    }
                 }
                 
             }
@@ -90,7 +124,7 @@ struct DashboardView: View {
         }
         
     }
-    
+}
     struct MenuBar<Content>: View where Content: View {
         @State private var showPaymentForm = false
         
@@ -212,7 +246,92 @@ struct DashboardView: View {
             
         }
     }
+    
+    struct TransactionHeader: View {
+        @Binding var listType: TransactionDisplayType
+        
+        var body: some View {
+            VStack {
+                HStack {
+                    Text("Recent transactions")
+                        .font(.headline)
+                        .foregroundColor(Color("Heading"))
+                    Spacer()
+                }
+                .padding(.bottom, 5)
+                
+                HStack {
+                    Group {
+                        Text("All")
+                            .padding(3)
+                            .padding(.horizontal, 10)
+                            .background(listType == .all ? Color("PrimaryButton") : Color("SecondaryButton"))
+                            .onTapGesture {
+                                self.listType = .all
+                            }
+                        
+                        Text("Income")
+                            .padding(3)
+                            .padding(.horizontal, 10)
+                            .background(listType == .income ? Color("PrimaryButton") : Color("SecondaryButton"))
+                            .onTapGesture {
+                                self.listType = .income
+                            }
+                        
+                        Text("Expense")
+                            .padding(3)
+                            .padding(.horizontal, 10)
+                            .background(listType == .expense ? Color("PrimaryButton") : Color("SecondaryButton"))
+                            .onTapGesture {
+                                self.listType = .expense
+                            }
+                    }
+                    .font(.system(.subheadline, design: .rounded))
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    
+                    Spacer()
+                }
+            }
+        }
+    }
+
+struct TransactionCellView: View {
+    
+    @ObservedObject var transaction: PaymentActivity
+
+    var body: some View {
+        
+        HStack(spacing: 20) {
+            
+            if transaction.isFault {
+                EmptyView()
+           
+            }  else {
+            
+                Image(systemName: transaction.type == .income ? "arrowtriangle.up.circle.fill" : "arrowtriangle.down.circle.fill")
+                    .font(.title)
+                    .foregroundColor(Color(transaction.type == .income ? "IncomeCard" : "ExpenseCard"))
+                
+                VStack(alignment: .leading) {
+                    Text(transaction.name)
+                        .font(.system(.body, design: .rounded))
+                    Text(transaction.date.string())
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundColor(.gray)
+                }
+        
+                Spacer()
+                
+                Text((transaction.type == .income ? "+" : "-") + NumberFormatter.currency(from: transaction.amount))
+                    .font(.system(.headline, design: .rounded))
+            }
+        }
+        .padding(.vertical, 5)
+        
+    }
 }
+
 //#Preview {
 //    DashboardView()
 //}
