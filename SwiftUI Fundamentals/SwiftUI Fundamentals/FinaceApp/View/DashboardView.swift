@@ -108,7 +108,7 @@ struct DashboardView: View {
                                 
                                 Button(action: {
                                     // Delete the selected payment
-                                    //self.delete(payment: transaction)
+                                    self.delete(payment: transaction)
                                 }) {
                                     HStack {
                                         Text("Delete")
@@ -116,6 +116,10 @@ struct DashboardView: View {
                                     }
                                 }
                             }
+                            
+                    }
+                    .sheet(isPresented: $showPaymentDetails) {
+                        PaymentFormView(payment: self.selectedPaymentActivity!).presentationDetents([.medium, .large])
                     }
                 }
                 
@@ -123,6 +127,16 @@ struct DashboardView: View {
             .padding(.horizontal)
         }
         
+    }
+    
+    private func delete(payment: PaymentActivity) {
+        self.viewContext.delete(payment)
+        
+        do {
+            try self.viewContext.save()
+        } catch {
+            print("Failed to save the context: \(error.localizedDescription)")
+        }
     }
 }
     struct MenuBar<Content>: View where Content: View {
@@ -331,6 +345,7 @@ struct TransactionCellView: View {
         
     }
 }
+
 
 //#Preview {
 //    DashboardView()

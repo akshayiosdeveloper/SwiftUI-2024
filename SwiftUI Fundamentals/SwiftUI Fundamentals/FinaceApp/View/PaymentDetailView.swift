@@ -13,7 +13,7 @@ struct PaymentDetailView: View {
     
     init(payment: PaymentActivity, viewModel: PaymentDetailViewModel) {
         self.payment = payment
-        self.viewModel = viewModel
+        self.viewModel =  PaymentDetailViewModel(payment: payment)
     }
     
     var body: some View {
