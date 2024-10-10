@@ -47,6 +47,7 @@ started working on finance app 25 september
 setup core data stack 
 add view model and validation methods
 save method
+done with finance app
 add detail view
 added menu bar and expense card in dashboard view 
 added list view and transaction cell in finance view 
