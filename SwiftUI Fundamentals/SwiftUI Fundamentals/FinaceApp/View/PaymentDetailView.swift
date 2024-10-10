@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct PaymentDetailView: View {
+    
     let payment: PaymentActivity
+    
     private let viewModel: PaymentDetailViewModel
     
-    init(payment: PaymentActivity, viewModel: PaymentDetailViewModel) {
+    init(payment: PaymentActivity) {
+        
         self.payment = payment
-        self.viewModel =  PaymentDetailViewModel(payment: payment)
+        self.viewModel = PaymentDetailViewModel(payment: payment)
     }
     
     var body: some View {
         VStack {
-            // Title
-            TitleBar(viewModel: self.viewModel)
+            TitleBar1(viewModel: self.viewModel)
                 .padding(.top, 10)
-            // image
+            
             Image(self.viewModel.image)
                 .resizable()
                 .scaledToFit()
                 .frame(minWidth: 0, maxWidth: .infinity)
+            
             // Payment details
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 2) {
@@ -54,9 +57,10 @@ struct PaymentDetailView: View {
                 }
                 .padding(.trailing)
             }
+            
             Divider()
                 .padding(.horizontal)
-            // Memo
+            
             if self.viewModel.memo != "" {
                 Group {
                     Text("Memo")
@@ -76,29 +80,27 @@ struct PaymentDetailView: View {
             
             Spacer()
         }
-    }
-    
-    struct TitleBar: View {
-        var viewModel: PaymentDetailViewModel
         
-        var body: some View {
-            HStack {
-                Text("Payment Details")
-                    .font(.headline)
-                    .foregroundColor(Color("Heading"))
-                
-                Image(systemName: viewModel.typeIcon)
-                    .foregroundColor(Color("ExpenseCard"))
-                
-                Spacer()
-            }
-            .padding()
-        }
     }
-
-    
 }
 
 //#Preview {
 //    PaymentDetailView()
 //}
+struct TitleBar1: View {
+    var viewModel: PaymentDetailViewModel
+    
+    var body: some View {
+        HStack {
+            Text("Payment Details")
+                .font(.headline)
+                .foregroundColor(Color("Heading"))
+            
+            Image(systemName: viewModel.typeIcon)
+                .foregroundColor(Color("ExpenseCard"))
+            
+            Spacer()
+        }
+        .padding()
+    }
+}
