@@ -52,4 +52,6 @@ add detail view
 added menu bar and expense card in dashboard view 
 added list view and transaction cell in finance view 
 fix teh bug
+start appstore app on 14 october
+
 
