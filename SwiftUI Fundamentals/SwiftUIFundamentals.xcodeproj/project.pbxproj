@@ -24,6 +24,7 @@
 		D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B81CF2C37E9BE00A68EC9 /* SettingStore.swift */; };
 		D03DCE222BEE43EF00B2C7DE /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DCE212BEE43EF00B2C7DE /* Form.swift */; };
 		D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DCE232BEE460800B2C7DE /* SettingView.swift */; };
+		D03F09342CC0CC8200525561 /* AppStoreDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F09332CC0CC8200525561 /* AppStoreDashboardView.swift */; };
 		D049B6AA2BC6569600229295 /* NavigatinStack_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049B6A92BC6569600229295 /* NavigatinStack_Exercise.swift */; };
 		D049B6AC2BC658C200229295 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049B6AB2BC658C200229295 /* RestaurantDetailView.swift */; };
 		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
@@ -114,6 +115,7 @@
 		D03B81CF2C37E9BE00A68EC9 /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
 		D03DCE212BEE43EF00B2C7DE /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		D03DCE232BEE460800B2C7DE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		D03F09332CC0CC8200525561 /* AppStoreDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreDashboardView.swift; sourceTree = "<group>"; };
 		D049B6A92BC6569600229295 /* NavigatinStack_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatinStack_Exercise.swift; sourceTree = "<group>"; };
 		D049B6AB2BC658C200229295 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				D0136B8D2CBCDB7400FBD78A /* AppStoreCardView.swift */,
+				D03F09332CC0CC8200525561 /* AppStoreDashboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				D0A73ECF2C648CE300C6C60C /* Trip.swift in Sources */,
 				D066C3FE2CA540F000FCA814 /* DashboardView.swift in Sources */,
 				D0136B8A2CBCD7A800FBD78A /* Article.swift in Sources */,
+				D03F09342CC0CC8200525561 /* AppStoreDashboardView.swift in Sources */,
 				D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */,
 				D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */,
 				D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */,
