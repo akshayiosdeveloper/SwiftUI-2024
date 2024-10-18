@@ -34,6 +34,9 @@
 		D066C3FC2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066C3FB2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift */; };
 		D066C3FE2CA540F000FCA814 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066C3FD2CA540F000FCA814 /* DashboardView.swift */; };
 		D066C4052CA566D400FCA814 /* PaymentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066C4032CA566D400FCA814 /* PaymentActivity.swift */; };
+		D06796A22CC2252400727759 /* Trip1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A12CC2252400727759 /* Trip1.swift */; };
+		D06796A52CC2271F00727759 /* TripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A42CC2271F00727759 /* TripCardView.swift */; };
+		D06796A72CC228E500727759 /* DashboardTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A62CC228E500727759 /* DashboardTravelApp.swift */; };
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
@@ -125,6 +128,9 @@
 		D066C3FB2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppPersistenceStore.swift; sourceTree = "<group>"; };
 		D066C3FD2CA540F000FCA814 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D066C4032CA566D400FCA814 /* PaymentActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentActivity.swift; sourceTree = "<group>"; };
+		D06796A12CC2252400727759 /* Trip1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip1.swift; sourceTree = "<group>"; };
+		D06796A42CC2271F00727759 /* TripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardView.swift; sourceTree = "<group>"; };
+		D06796A62CC228E500727759 /* DashboardTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTravelApp.swift; sourceTree = "<group>"; };
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
@@ -294,6 +300,32 @@
 			path = FinanceAppPersistenceStore;
 			sourceTree = "<group>";
 		};
+		D067969F2CC2250300727759 /* TravelApp */ = {
+			isa = PBXGroup;
+			children = (
+				D06796A32CC2270C00727759 /* View */,
+				D06796A02CC2251500727759 /* Model */,
+			);
+			path = TravelApp;
+			sourceTree = "<group>";
+		};
+		D06796A02CC2251500727759 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D06796A12CC2252400727759 /* Trip1.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D06796A32CC2270C00727759 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D06796A42CC2271F00727759 /* TripCardView.swift */,
+				D06796A62CC228E500727759 /* DashboardTravelApp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D081E7072CA2D831008C18A9 /* CustomSearchBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +441,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D067969F2CC2250300727759 /* TravelApp */,
 				D0136B882CBCD79300FBD78A /* AppStore */,
 				D0D0557C2CA438490029DD2E /* FinaceApp */,
 				D081E7072CA2D831008C18A9 /* CustomSearchBar */,
@@ -667,6 +700,7 @@
 				D0C5C09F2C7C837C002E3C34 /* WalletApp.swift in Sources */,
 				D0ABAE832CAA5CDB000D7BD3 /* Number+Ext.swift in Sources */,
 				D032E6342C9A8C4A00EB2E39 /* ToDoMenu.swift in Sources */,
+				D06796A72CC228E500727759 /* DashboardTravelApp.swift in Sources */,
 				D02FB4302C9949FE000A025C /* ToDoListRow.swift in Sources */,
 				D0A73ED32C64929E00C6C60C /* TopBarMenu.swift in Sources */,
 				D01EB5292C9D49EA00486D50 /* FilteredList.swift in Sources */,
@@ -682,11 +716,13 @@
 				D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */,
 				D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */,
 				D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */,
+				D06796A52CC2271F00727759 /* TripCardView.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */,
 				D0ABAE7A2CAA564F000D7BD3 /* PaymentFormView.swift in Sources */,
 				D0EBA9902C92A9C0009B44C1 /* Loan.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
+				D06796A22CC2252400727759 /* Trip1.swift in Sources */,
 				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
 				D0C5C0A32C7C84DC002E3C34 /* Transaction.swift in Sources */,
 				D0EBA9952C92AED3009B44C1 /* LoanCellView.swift in Sources */,
