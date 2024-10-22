@@ -56,5 +56,6 @@ start appstore app on 14 october
 working on card
 done with appstore app
 started travel app and building carousel fucntionality 18 oct 2024
+add carousel in the app
 
 
