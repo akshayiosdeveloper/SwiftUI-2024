@@ -26,7 +26,8 @@ struct SwiftUI_FundamentalsApp: App {
             
           //  AppStoreDashboardView()
            // TripCardView(destination: "London", imageName: "london", isShowDetails: .constant(false))
-            DashboardTravelApp()
+           // DashboardTravelApp()
+            ExpandableListDashBoard()
 
 
         }
