@@ -38,6 +38,7 @@
 		D06796A22CC2252400727759 /* Trip1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A12CC2252400727759 /* Trip1.swift */; };
 		D06796A52CC2271F00727759 /* TripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A42CC2271F00727759 /* TripCardView.swift */; };
 		D06796A72CC228E500727759 /* DashboardTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06796A62CC228E500727759 /* DashboardTravelApp.swift */; };
+		D0681E7B2CDB6F960002D798 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0681E7A2CDB6F960002D798 /* FAQ.swift */; };
 		D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */; };
 		D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */; };
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
@@ -134,6 +135,7 @@
 		D06796A12CC2252400727759 /* Trip1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip1.swift; sourceTree = "<group>"; };
 		D06796A42CC2271F00727759 /* TripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardView.swift; sourceTree = "<group>"; };
 		D06796A62CC228E500727759 /* DashboardTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTravelApp.swift; sourceTree = "<group>"; };
+		D0681E7A2CDB6F960002D798 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		D07640EB2B7A06EC00AC62D5 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		D07826922B96DE4C00A1C948 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				D0F7A09B2CDA380C00577590 /* Model */,
 				D050FADC2CC90C1900DDC7C5 /* ExpandableListDashBoard.swift */,
+				D0681E7A2CDB6F960002D798 /* FAQ.swift */,
 			);
 			path = ExpandableList;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */,
 				D06796A52CC2271F00727759 /* TripCardView.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
+				D0681E7B2CDB6F960002D798 /* FAQ.swift in Sources */,
 				D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */,
 				D0ABAE7A2CAA564F000D7BD3 /* PaymentFormView.swift in Sources */,
 				D0EBA9902C92A9C0009B44C1 /* Loan.swift in Sources */,
