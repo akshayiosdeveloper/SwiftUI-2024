@@ -59,5 +59,6 @@ started travel app and building carousel fucntionality 18 oct 2024
 add carousel in the app
 started expanded list view 5 november 2024
 complete the expanded list excercise 
+started grid view layout chapter  (11 nov)
 
 
