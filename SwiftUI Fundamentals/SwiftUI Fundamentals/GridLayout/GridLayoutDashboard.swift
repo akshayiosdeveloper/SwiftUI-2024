@@ -20,7 +20,7 @@ struct GridLayoutDashboard: View {
     private var gridItemLayoutWithFixedLayout = [GridItem(.fixed(100)), GridItem(.fixed(150))]
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: gridItemLayoutWithFixedLayout, spacing: 20) {
+            LazyHGrid(rows: gridItemLayoutWithFixedLayout, spacing: 20) {
                 ForEach((0...100), id: \.self) {
                     Image(systemName: symbols[$0 % symbols.count])
                         .font(.system(size: 30))

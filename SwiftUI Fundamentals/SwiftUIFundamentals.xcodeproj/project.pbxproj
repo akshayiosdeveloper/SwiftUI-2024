@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00130FE2B9826B90011230E /* Mic_Animation.swift */; };
 		D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0014D1C2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift */; };
+		D00D18E72CE4D1B8008D5E43 /* PhotoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D18E62CE4D1B8008D5E43 /* PhotoSwift.swift */; };
+		D00D18E92CE4D259008D5E43 /* PhotoGridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D18E82CE4D259008D5E43 /* PhotoGridLayoutView.swift */; };
 		D0136B8A2CBCD7A800FBD78A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0136B892CBCD7A800FBD78A /* Article.swift */; };
 		D0136B8E2CBCDB7400FBD78A /* AppStoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0136B8D2CBCDB7400FBD78A /* AppStoreCardView.swift */; };
 		D01EB5292C9D49EA00486D50 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01EB5282C9D49EA00486D50 /* FilteredList.swift */; };
@@ -107,6 +109,8 @@
 /* Begin PBXFileReference section */
 		D00130FE2B9826B90011230E /* Mic_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mic_Animation.swift; sourceTree = "<group>"; };
 		D0014D1C2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewDemo.swift; sourceTree = "<group>"; };
+		D00D18E62CE4D1B8008D5E43 /* PhotoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwift.swift; sourceTree = "<group>"; };
+		D00D18E82CE4D259008D5E43 /* PhotoGridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridLayoutView.swift; sourceTree = "<group>"; };
 		D0136B892CBCD7A800FBD78A /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		D0136B8D2CBCDB7400FBD78A /* AppStoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardView.swift; sourceTree = "<group>"; };
 		D01EB5282C9D49EA00486D50 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
@@ -385,6 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				D0A5DA2C2CE210D400C720A3 /* GridLayoutDashboard.swift */,
+				D00D18E62CE4D1B8008D5E43 /* PhotoSwift.swift */,
+				D00D18E82CE4D259008D5E43 /* PhotoGridLayoutView.swift */,
 			);
 			path = GridLayout;
 			sourceTree = "<group>";
@@ -769,7 +775,9 @@
 				D0EDFA772C93F91D000BDB25 /* ToDo.swift in Sources */,
 				D0136B8E2CBCDB7400FBD78A /* AppStoreCardView.swift in Sources */,
 				D0C78A952B4674420022FC0A /* SwiftUI_FundamentalsApp.swift in Sources */,
+				D00D18E92CE4D259008D5E43 /* PhotoGridLayoutView.swift in Sources */,
 				D066C4052CA566D400FCA814 /* PaymentActivity.swift in Sources */,
+				D00D18E72CE4D1B8008D5E43 /* PhotoSwift.swift in Sources */,
 				D049B6AA2BC6569600229295 /* NavigatinStack_Exercise.swift in Sources */,
 				D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */,
 				D066C3F92CA53EFE00FCA814 /* FinanceApp.xcdatamodeld in Sources */,

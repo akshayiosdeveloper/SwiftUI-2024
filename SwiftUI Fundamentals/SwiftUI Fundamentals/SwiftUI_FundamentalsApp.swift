@@ -30,7 +30,8 @@ struct SwiftUI_FundamentalsApp: App {
            // ExpandableListDashBoard()
             
           //  FAQ()
-            GridLayoutDashboard()
+          //  GridLayoutDashboard()
+            PhotoGridLayoutView()
 
 
         }
