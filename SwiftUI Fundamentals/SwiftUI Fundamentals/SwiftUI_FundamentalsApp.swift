@@ -31,7 +31,8 @@ struct SwiftUI_FundamentalsApp: App {
             
           //  FAQ()
           //  GridLayoutDashboard()
-            PhotoGridLayoutView()
+           // PhotoGridLayoutView()
+            MultiGridView()
 
 
         }
