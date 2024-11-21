@@ -61,5 +61,6 @@ started expanded list view 5 november 2024
 complete the expanded list excercise 
 started grid view layout chapter  (11 nov)
 working on photos app for gridview 
+complete grid excercise
 
 
