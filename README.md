@@ -62,5 +62,6 @@ complete the expanded list excercise
 started grid view layout chapter  (11 nov)
 working on photos app for gridview 
 complete grid excercise
+started with new chapter progress view (25 nov)
 
 
