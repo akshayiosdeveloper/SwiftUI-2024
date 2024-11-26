@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00130FE2B9826B90011230E /* Mic_Animation.swift */; };
 		D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0014D1C2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift */; };
+		D0081FE62CF43D0A00951AAF /* ProgressRingViewDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0081FE52CF43D0A00951AAF /* ProgressRingViewDashboard.swift */; };
+		D0081FE82CF4408900951AAF /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0081FE72CF4408900951AAF /* Color+Ext.swift */; };
 		D00D18E72CE4D1B8008D5E43 /* PhotoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D18E62CE4D1B8008D5E43 /* PhotoSwift.swift */; };
 		D00D18E92CE4D259008D5E43 /* PhotoGridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D18E82CE4D259008D5E43 /* PhotoGridLayoutView.swift */; };
 		D0136B8A2CBCD7A800FBD78A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0136B892CBCD7A800FBD78A /* Article.swift */; };
@@ -61,6 +63,7 @@
 		D0A73ED52C6494CD00C6C60C /* TinderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A73ED42C6494CD00C6C60C /* TinderHome.swift */; };
 		D0A7B4C52C5B480E00B663CD /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7B4C42C5B480E00B663CD /* Gesture.swift */; };
 		D0A7CE092C9BF30300609C6F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7CE082C9BF30300609C6F /* SearchBar.swift */; };
+		D0AB185E2CF5E4F600F9F1AC /* ProgressMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB185D2CF5E4F600F9F1AC /* ProgressMainView.swift */; };
 		D0ABAE7A2CAA564F000D7BD3 /* PaymentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE792CAA564F000D7BD3 /* PaymentFormView.swift */; };
 		D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE7D2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift */; };
 		D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */; };
@@ -111,6 +114,8 @@
 /* Begin PBXFileReference section */
 		D00130FE2B9826B90011230E /* Mic_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mic_Animation.swift; sourceTree = "<group>"; };
 		D0014D1C2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewDemo.swift; sourceTree = "<group>"; };
+		D0081FE52CF43D0A00951AAF /* ProgressRingViewDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingViewDashboard.swift; sourceTree = "<group>"; };
+		D0081FE72CF4408900951AAF /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		D00D18E62CE4D1B8008D5E43 /* PhotoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwift.swift; sourceTree = "<group>"; };
 		D00D18E82CE4D259008D5E43 /* PhotoGridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridLayoutView.swift; sourceTree = "<group>"; };
 		D0136B892CBCD7A800FBD78A /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -164,6 +169,7 @@
 		D0A73ED42C6494CD00C6C60C /* TinderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderHome.swift; sourceTree = "<group>"; };
 		D0A7B4C42C5B480E00B663CD /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
 		D0A7CE082C9BF30300609C6F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D0AB185D2CF5E4F600F9F1AC /* ProgressMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMainView.swift; sourceTree = "<group>"; };
 		D0ABAE792CAA564F000D7BD3 /* PaymentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormView.swift; sourceTree = "<group>"; };
 		D0ABAE7D2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormViewModel.swift; sourceTree = "<group>"; };
 		D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
@@ -220,6 +226,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0081FE42CF43CEC00951AAF /* ProgessiveViewDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0081FE52CF43D0A00951AAF /* ProgressRingViewDashboard.swift */,
+				D0081FE72CF4408900951AAF /* Color+Ext.swift */,
+				D0AB185D2CF5E4F600F9F1AC /* ProgressMainView.swift */,
+			);
+			path = ProgessiveViewDashboard;
+			sourceTree = "<group>";
+		};
 		D0136B882CBCD79300FBD78A /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +495,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0081FE42CF43CEC00951AAF /* ProgessiveViewDashboard */,
 				D0A5DA2B2CE210C000C720A3 /* GridLayout */,
 				D050FADB2CC90BEB00DDC7C5 /* ExpandableList */,
 				D067969F2CC2250300727759 /* TravelApp */,
@@ -738,6 +755,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0081FE62CF43D0A00951AAF /* ProgressRingViewDashboard.swift in Sources */,
 				D0926E192CAE5B540036F103 /* PaymentDetailViewModel.swift in Sources */,
 				D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */,
 				D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */,
@@ -767,6 +785,7 @@
 				D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */,
 				D06796A52CC2271F00727759 /* TripCardView.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
+				D0AB185E2CF5E4F600F9F1AC /* ProgressMainView.swift in Sources */,
 				D0681E7B2CDB6F960002D798 /* FAQ.swift in Sources */,
 				D0014D1D2C624C4A00DAA2DF /* RestaurantDetailViewDemo.swift in Sources */,
 				D0ABAE7A2CAA564F000D7BD3 /* PaymentFormView.swift in Sources */,
@@ -817,6 +836,7 @@
 				D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */,
 				D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
+				D0081FE82CF4408900951AAF /* Color+Ext.swift in Sources */,
 				D049B6AC2BC658C200229295 /* RestaurantDetailView.swift in Sources */,
 				D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */,
 				D0EDFAA22C94053F000BDB25 /* ToDoItem.swift in Sources */,
