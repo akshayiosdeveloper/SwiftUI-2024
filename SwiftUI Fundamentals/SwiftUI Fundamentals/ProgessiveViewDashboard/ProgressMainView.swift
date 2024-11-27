@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProgressMainView: View {
     @State var progress = 0.0
+   
     var body: some View {
         VStack {
             ProgressRingViewDashboard(progress: $progress)
+                .animation(.easeInOut(duration: 1.0), value: progress)
             HStack {
                 Group {
                     Text("0%")
