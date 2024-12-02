@@ -12,8 +12,12 @@ struct ProgressMainView: View {
    
     var body: some View {
         VStack {
-            ProgressRingViewDashboard(progress: $progress)
-                .animation(.easeInOut(duration: 1.0), value: progress)
+            ZStack {
+                ProgressRingViewDashboard(thickness: 30, width: 300, gradient: Gradient(colors: [.darkPurple, .lightPurple]), progress: $progress)
+                ProgressRingViewDashboard(thickness: 30, width: 235, gradient: Gradient(colors: [.darkYellow, .lightYellow]), progress: $progress)
+                
+                ProgressRingViewDashboard(thickness: 30, width: 170, gradient: Gradient(colors: [.darkGreen, .lightGreen]), progress: $progress)
+            }
             HStack {
                 Group {
                     Text("0%")
@@ -35,7 +39,8 @@ struct ProgressMainView: View {
                 .padding()
                 .background(Color(.systemGray6)) .clipShape(RoundedRectangle(cornerRadius: 15.0, style: .continuous)) .padding()
             }
-            .padding() }
+            .padding()
+        }
     }
 }
 
