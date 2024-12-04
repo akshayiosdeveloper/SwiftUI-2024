@@ -125,3 +125,12 @@ extension View {
         self.modifier(ProgressTextModifier(progress: progress, textColor: textColor))
     }
 }
+
+struct ProgressBarLibrary: LibraryContentProvider {
+    @LibraryContentBuilder var views: [LibraryItem] {
+        LibraryItem(ProgressRingViewDashboard(thickness: 12.0, width: 130.0, gradient: Gradient(colors: [.darkYellow, .lightYellow]), progress: .constant(1.0)), title: "Progress Ring"
+                    , category: .control)
+        LibraryItem(ProgressRingViewDashboard(thickness: 30.0, width: 250.0, gradient: Gradient(colors: [.darkPurple, .lightYellow]), progress: .constant(1.0)), title: "Progress Ring Bigger"
+                    , category: .control)
+    }
+}
