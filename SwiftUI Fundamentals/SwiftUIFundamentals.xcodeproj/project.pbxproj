@@ -69,6 +69,7 @@
 		D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */; };
 		D0ABAE832CAA5CDB000D7BD3 /* Number+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE822CAA5CDB000D7BD3 /* Number+Ext.swift */; };
 		D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADF1EB2B81D2EF00699060 /* Paths.swift */; };
+		D0B01EC52D070C0E00C27935 /* TextEditorDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */; };
 		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
 		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
@@ -175,6 +176,7 @@
 		D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		D0ABAE822CAA5CDB000D7BD3 /* Number+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Ext.swift"; sourceTree = "<group>"; };
 		D0ADF1EB2B81D2EF00699060 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDashboard.swift; sourceTree = "<group>"; };
 		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
 		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
@@ -446,6 +448,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D0B01EC32D070B8E00C27935 /* TextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */,
+			);
+			path = TextEditor;
+			sourceTree = "<group>";
+		};
 		D0B6692E2C4E184000ED1F55 /* SwipeDelete */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +505,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0B01EC32D070B8E00C27935 /* TextEditor */,
 				D0081FE42CF43CEC00951AAF /* ProgessiveViewDashboard */,
 				D0A5DA2B2CE210C000C720A3 /* GridLayout */,
 				D050FADB2CC90BEB00DDC7C5 /* ExpandableList */,
@@ -769,6 +780,7 @@
 				D06796A72CC228E500727759 /* DashboardTravelApp.swift in Sources */,
 				D02FB4302C9949FE000A025C /* ToDoListRow.swift in Sources */,
 				D0A73ED32C64929E00C6C60C /* TopBarMenu.swift in Sources */,
+				D0B01EC52D070C0E00C27935 /* TextEditorDashboard.swift in Sources */,
 				D01EB5292C9D49EA00486D50 /* FilteredList.swift in Sources */,
 				D02E97DA2B4D15F2006500C1 /* ImageView.swift in Sources */,
 				D0EDFA7A2C93FB09000BDB25 /* Model.xcdatamodeld in Sources */,

@@ -33,8 +33,10 @@ struct SwiftUI_FundamentalsApp: App {
           //  GridLayoutDashboard()
            // PhotoGridLayoutView()
            // MultiGridView()
-            ProgressMainView()
+           // ProgressMainView()
           //  ProgressRingViewDashboard()
+            
+            TextEditorDashboard()
 
 
         }
