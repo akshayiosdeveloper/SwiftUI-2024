@@ -69,5 +69,6 @@ done with circle code
 done with circle app
 start a new chapter with animatable protocol (3 dec)
 done with chapter
+start with new chapter text editor (9 dec)
 
 
