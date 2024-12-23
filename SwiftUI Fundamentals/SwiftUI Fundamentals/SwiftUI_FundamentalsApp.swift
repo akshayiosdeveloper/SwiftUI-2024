@@ -36,7 +36,9 @@ struct SwiftUI_FundamentalsApp: App {
            // ProgressMainView()
           //  ProgressRingViewDashboard()
             
-            TextEditorDashboard()
+            //TextEditorDashboard()
+           // GeometryDashboard()
+            ScrollViewReaderDashboard()
 
 
         }

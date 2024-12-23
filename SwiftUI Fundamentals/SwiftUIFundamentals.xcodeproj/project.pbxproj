@@ -34,6 +34,7 @@
 		D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99242B9979BD00EF3061 /* Transistion.swift */; };
 		D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04E99262B99804800EF3061 /* AnimationChallenge.swift */; };
 		D050FADD2CC90C1900DDC7C5 /* ExpandableListDashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FADC2CC90C1900DDC7C5 /* ExpandableListDashBoard.swift */; };
+		D05A41212D191A01006851D2 /* ScrollViewReaderDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A41202D191A01006851D2 /* ScrollViewReaderDashboard.swift */; };
 		D061B5552C65FC0100A34991 /* BottomBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061B5542C65FC0100A34991 /* BottomBarMenu.swift */; };
 		D066C3F92CA53EFE00FCA814 /* FinanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D066C3F72CA53EFE00FCA814 /* FinanceApp.xcdatamodeld */; };
 		D066C3FC2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066C3FB2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift */; };
@@ -54,6 +55,7 @@
 		D0926E192CAE5B540036F103 /* PaymentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0926E182CAE5B540036F103 /* PaymentDetailViewModel.swift */; };
 		D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A13F72B89C902005A2DA0 /* Loader.swift */; };
 		D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A88E32B87AC1400EFB08F /* PathExercise.swift */; };
+		D0A0AE072D1040EA00E21F18 /* GeometryDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0AE062D1040EA00E21F18 /* GeometryDashboard.swift */; };
 		D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */; };
 		D0A595F52CAC092E00053918 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */; };
 		D0A5DA2D2CE210D400C720A3 /* GridLayoutDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5DA2C2CE210D400C720A3 /* GridLayoutDashboard.swift */; };
@@ -140,6 +142,7 @@
 		D04E99242B9979BD00EF3061 /* Transistion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transistion.swift; sourceTree = "<group>"; };
 		D04E99262B99804800EF3061 /* AnimationChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationChallenge.swift; sourceTree = "<group>"; };
 		D050FADC2CC90C1900DDC7C5 /* ExpandableListDashBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListDashBoard.swift; sourceTree = "<group>"; };
+		D05A41202D191A01006851D2 /* ScrollViewReaderDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderDashboard.swift; sourceTree = "<group>"; };
 		D061B5542C65FC0100A34991 /* BottomBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarMenu.swift; sourceTree = "<group>"; };
 		D066C3F82CA53EFE00FCA814 /* FinanceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceApp.xcdatamodel; sourceTree = "<group>"; };
 		D066C3FB2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppPersistenceStore.swift; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 		D0926E182CAE5B540036F103 /* PaymentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewModel.swift; sourceTree = "<group>"; };
 		D09A13F72B89C902005A2DA0 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		D09A88E32B87AC1400EFB08F /* PathExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathExercise.swift; sourceTree = "<group>"; };
+		D0A0AE062D1040EA00E21F18 /* GeometryDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryDashboard.swift; sourceTree = "<group>"; };
 		D0A55E0E2C4A36B500A7DE06 /* UserRegisterationModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterationModelView.swift; sourceTree = "<group>"; };
 		D0A595F42CAC092E00053918 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		D0A5DA2C2CE210D400C720A3 /* GridLayoutDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutDashboard.swift; sourceTree = "<group>"; };
@@ -308,6 +312,14 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		D05A411F2D1919E4006851D2 /* ScrollViewReader */ = {
+			isa = PBXGroup;
+			children = (
+				D05A41202D191A01006851D2 /* ScrollViewReaderDashboard.swift */,
+			);
+			path = ScrollViewReader;
+			sourceTree = "<group>";
+		};
 		D066C3F42CA53E7900FCA814 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +417,14 @@
 				D09A13F72B89C902005A2DA0 /* Loader.swift */,
 			);
 			path = Excercise;
+			sourceTree = "<group>";
+		};
+		D0A0AE032D1040B800E21F18 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				D0A0AE062D1040EA00E21F18 /* GeometryDashboard.swift */,
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		D0A5DA2B2CE210C000C720A3 /* GridLayout */ = {
@@ -505,6 +525,8 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D05A411F2D1919E4006851D2 /* ScrollViewReader */,
+				D0A0AE032D1040B800E21F18 /* Geometry */,
 				D0B01EC32D070B8E00C27935 /* TextEditor */,
 				D0081FE42CF43CEC00951AAF /* ProgessiveViewDashboard */,
 				D0A5DA2B2CE210C000C720A3 /* GridLayout */,
@@ -830,6 +852,7 @@
 				D07640EC2B7A06EC00AC62D5 /* StateManagement.swift in Sources */,
 				D0EBA98E2C92A992009B44C1 /* KivaApp.swift in Sources */,
 				D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */,
+				D0A0AE072D1040EA00E21F18 /* GeometryDashboard.swift in Sources */,
 				D0EDFA742C93F312000BDB25 /* LoanFilterView.swift in Sources */,
 				D0EDFA9B2C93FD0A000BDB25 /* Persistence.swift in Sources */,
 				D04E99252B9979BD00EF3061 /* Transistion.swift in Sources */,
@@ -855,6 +878,7 @@
 				D09A13F82B89C902005A2DA0 /* Loader.swift in Sources */,
 				D0D6AF672BD12FF2001CC9EE /* SheetExample.swift in Sources */,
 				D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */,
+				D05A41212D191A01006851D2 /* ScrollViewReaderDashboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
