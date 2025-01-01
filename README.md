@@ -72,5 +72,6 @@ done with chapter
 start with new chapter text editor (9 dec)
 started new chapter geometry effect (16 dec)
 started new chapter scrollview reader (23 dec )
+done with scrolliew reader chapter (1 jan 2025)
 
 
