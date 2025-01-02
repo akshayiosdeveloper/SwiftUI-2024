@@ -39,7 +39,8 @@ struct SwiftUI_FundamentalsApp: App {
             //TextEditorDashboard()
            // GeometryDashboard()
            // ScrollViewReaderDashboard()
-            TabBarDashboard()
+           // TabBarDashboard()
+            AsyncImageDemo()
 
 
         }

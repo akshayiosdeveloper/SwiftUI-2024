@@ -88,6 +88,7 @@
 		D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1FA052C4786CD0043C9BB /* RegisterationPage.swift */; };
 		D0D6AF672BD12FF2001CC9EE /* SheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6AF662BD12FF2001CC9EE /* SheetExample.swift */; };
 		D0D6AF692BD13303001CC9EE /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6AF682BD13303001CC9EE /* ArticleDetailView.swift */; };
+		D0E5564C2D26AF2E000CCDD0 /* AsyncImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5564B2D26AF2E000CCDD0 /* AsyncImageDemo.swift */; };
 		D0EBA98E2C92A992009B44C1 /* KivaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBA98D2C92A992009B44C1 /* KivaApp.swift */; };
 		D0EBA9902C92A9C0009B44C1 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBA98F2C92A9C0009B44C1 /* Loan.swift */; };
 		D0EBA9922C92AAAB009B44C1 /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBA9912C92AAAB009B44C1 /* LoanStore.swift */; };
@@ -199,6 +200,7 @@
 		D0D1FA052C4786CD0043C9BB /* RegisterationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationPage.swift; sourceTree = "<group>"; };
 		D0D6AF662BD12FF2001CC9EE /* SheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExample.swift; sourceTree = "<group>"; };
 		D0D6AF682BD13303001CC9EE /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		D0E5564B2D26AF2E000CCDD0 /* AsyncImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageDemo.swift; sourceTree = "<group>"; };
 		D0EBA98D2C92A992009B44C1 /* KivaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KivaApp.swift; sourceTree = "<group>"; };
 		D0EBA98F2C92A9C0009B44C1 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		D0EBA9912C92AAAB009B44C1 /* LoanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStore.swift; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0E5564A2D26AF1A000CCDD0 /* AsyncImage */,
 				D095DD032D265834005B227D /* TapBarDashboard */,
 				D05A411F2D1919E4006851D2 /* ScrollViewReader */,
 				D0A0AE032D1040B800E21F18 /* Geometry */,
@@ -609,6 +612,14 @@
 				D0D6AF662BD12FF2001CC9EE /* SheetExample.swift */,
 			);
 			path = Sheets;
+			sourceTree = "<group>";
+		};
+		D0E5564A2D26AF1A000CCDD0 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				D0E5564B2D26AF2E000CCDD0 /* AsyncImageDemo.swift */,
+			);
+			path = AsyncImage;
 			sourceTree = "<group>";
 		};
 		D0EBA98C2C92A91B009B44C1 /* JSONDecoder */ = {
@@ -808,6 +819,7 @@
 				D0A73ED12C648E1200C6C60C /* TinderCardView.swift in Sources */,
 				D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */,
 				D0EBA9922C92AAAB009B44C1 /* LoanStore.swift in Sources */,
+				D0E5564C2D26AF2E000CCDD0 /* AsyncImageDemo.swift in Sources */,
 				D0C5C09F2C7C837C002E3C34 /* WalletApp.swift in Sources */,
 				D0ABAE832CAA5CDB000D7BD3 /* Number+Ext.swift in Sources */,
 				D032E6342C9A8C4A00EB2E39 /* ToDoMenu.swift in Sources */,
