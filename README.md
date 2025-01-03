@@ -77,5 +77,6 @@ start tab bar demo chapter( 2 jan 2025)
 done with tab demo ( 2 jan 2025)
 start asynce image chapter (2 jan 2025)
 start new chapter on searchalbe ( 3 jan 2025)
+done with searchable text (3 jan 2025)
 
 
