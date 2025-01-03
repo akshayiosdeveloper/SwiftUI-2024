@@ -49,6 +49,7 @@
 		D07826952B96E1D300A1C948 /* DealyAnimationWithDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */; };
 		D081E70B2CA2D85E008C18A9 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081E70A2CA2D85E008C18A9 /* CustomSearchBar.swift */; };
 		D087C8E52BA2C4E600503815 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D087C8E42BA2C4E600503815 /* ListView.swift */; };
+		D08DE92E2D279D2B004E83A1 /* SearchableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08DE92D2D279D2B004E83A1 /* SearchableDemo.swift */; };
 		D091B4142BF726D300096F6D /* SwiftUIFundamentalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */; };
 		D091B4162BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091B4152BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift */; };
 		D0926E132CAE5A990036F103 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0926E122CAE5A990036F103 /* PaymentDetailView.swift */; };
@@ -159,6 +160,7 @@
 		D07826942B96E1D300A1C948 /* DealyAnimationWithDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealyAnimationWithDot.swift; sourceTree = "<group>"; };
 		D081E70A2CA2D85E008C18A9 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		D087C8E42BA2C4E600503815 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D08DE92D2D279D2B004E83A1 /* SearchableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableDemo.swift; sourceTree = "<group>"; };
 		D091B4112BF726D300096F6D /* SwiftUIFundamentalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFundamentalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D091B4132BF726D300096F6D /* SwiftUIFundamentalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFundamentalsUITests.swift; sourceTree = "<group>"; };
 		D091B4152BF726D300096F6D /* SwiftUIFundamentalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFundamentalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -405,6 +407,14 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		D08DE92C2D279D06004E83A1 /* SearchableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D08DE92D2D279D2B004E83A1 /* SearchableDemo.swift */,
+			);
+			path = SearchableDemo;
+			sourceTree = "<group>";
+		};
 		D091B4122BF726D300096F6D /* SwiftUIFundamentalsUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +547,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D08DE92C2D279D06004E83A1 /* SearchableDemo */,
 				D0E5564A2D26AF1A000CCDD0 /* AsyncImage */,
 				D095DD032D265834005B227D /* TapBarDashboard */,
 				D05A411F2D1919E4006851D2 /* ScrollViewReader */,
@@ -896,6 +907,7 @@
 				D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
 				D0081FE82CF4408900951AAF /* Color+Ext.swift in Sources */,
+				D08DE92E2D279D2B004E83A1 /* SearchableDemo.swift in Sources */,
 				D049B6AC2BC658C200229295 /* RestaurantDetailView.swift in Sources */,
 				D0A55E0F2C4A36B500A7DE06 /* UserRegisterationModelView.swift in Sources */,
 				D0EDFAA22C94053F000BDB25 /* ToDoItem.swift in Sources */,
