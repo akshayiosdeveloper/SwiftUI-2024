@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+/*
 struct SearchBar: UIViewRepresentable {
+  
     @Binding var text: String
     func makeUIView(context: Context) -> UISearchBar {
        let searchBar = UISearchBar()
@@ -52,3 +53,4 @@ class Coordinator: NSObject, UISearchBarDelegate {
         return true
     }
 }
+*/

@@ -41,7 +41,9 @@ struct SwiftUI_FundamentalsApp: App {
            // ScrollViewReaderDashboard()
            // TabBarDashboard()
            // AsyncImageDemo()
-            SearchableDemo()
+           // SearchableDemo()
+           // ChartBarDemo()
+            TextSpeechDemo()
 
 
         }

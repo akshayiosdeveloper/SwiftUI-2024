@@ -36,8 +36,8 @@ struct ToDo: View {
                 }
                 .padding()
                 // Add search bar
-                SearchBar(text: $searchText)
-                    .padding(.top,-20)
+               // SearchBar(text: $searchText)
+                   // .padding(.top,-20)
                 //show list view
                // List {
                     /*

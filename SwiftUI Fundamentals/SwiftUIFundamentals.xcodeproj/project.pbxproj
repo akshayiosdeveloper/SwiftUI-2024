@@ -22,6 +22,7 @@
 		D02E97DC2B4D16B0006500C1 /* LayoutInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */; };
 		D02FB4302C9949FE000A025C /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FB42F2C9949FE000A025C /* ToDoListRow.swift */; };
 		D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FB4332C994BC8000A025C /* CheckboxStyle.swift */; };
+		D032BCAC2D2B90D300121597 /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032BCAB2D2B90D300121597 /* DataScanner.swift */; };
 		D032E6342C9A8C4A00EB2E39 /* ToDoMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032E6332C9A8C4A00EB2E39 /* ToDoMenu.swift */; };
 		D03A13F72B9586D900CE6DE2 /* MediumLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */; };
 		D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */; };
@@ -73,6 +74,10 @@
 		D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */; };
 		D0ABAE832CAA5CDB000D7BD3 /* Number+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABAE822CAA5CDB000D7BD3 /* Number+Ext.swift */; };
 		D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADF1EB2B81D2EF00699060 /* Paths.swift */; };
+		D0AE7DE22D27AF7E00F77817 /* ChartBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE12D27AF7E00F77817 /* ChartBarDemo.swift */; };
+		D0AE7DE42D27AFD600F77817 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE32D27AFD600F77817 /* Mark.swift */; };
+		D0AE7DE62D27B53400F77817 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE52D27B53400F77817 /* WeatherData.swift */; };
+		D0AE7DE92D27D4EB00F77817 /* TextSpeechDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE82D27D4EB00F77817 /* TextSpeechDemo.swift */; };
 		D0B01EC52D070C0E00C27935 /* TextEditorDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */; };
 		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
@@ -133,6 +138,7 @@
 		D02E97DB2B4D16B0006500C1 /* LayoutInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutInterface.swift; sourceTree = "<group>"; };
 		D02FB42F2C9949FE000A025C /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
 		D02FB4332C994BC8000A025C /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		D032BCAB2D2B90D300121597 /* DataScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
 		D032E6332C9A8C4A00EB2E39 /* ToDoMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMenu.swift; sourceTree = "<group>"; };
 		D03A13F62B9586D900CE6DE2 /* MediumLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLoader.swift; sourceTree = "<group>"; };
 		D03A13F92B95A25300CE6DE2 /* RoundedRectangleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleAnimation.swift; sourceTree = "<group>"; };
@@ -185,6 +191,10 @@
 		D0ABAE802CAA5C86000D7BD3 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		D0ABAE822CAA5CDB000D7BD3 /* Number+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Ext.swift"; sourceTree = "<group>"; };
 		D0ADF1EB2B81D2EF00699060 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		D0AE7DE12D27AF7E00F77817 /* ChartBarDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartBarDemo.swift; sourceTree = "<group>"; };
+		D0AE7DE32D27AFD600F77817 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		D0AE7DE52D27B53400F77817 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		D0AE7DE82D27D4EB00F77817 /* TextSpeechDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechDemo.swift; sourceTree = "<group>"; };
 		D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDashboard.swift; sourceTree = "<group>"; };
 		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
@@ -490,6 +500,25 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D0AE7DE02D27AF6900F77817 /* ChartBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE7DE12D27AF7E00F77817 /* ChartBarDemo.swift */,
+				D0AE7DE32D27AFD600F77817 /* Mark.swift */,
+				D0AE7DE52D27B53400F77817 /* WeatherData.swift */,
+			);
+			path = ChartBarDemo;
+			sourceTree = "<group>";
+		};
+		D0AE7DE72D27D4D400F77817 /* TextSpeechDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE7DE82D27D4EB00F77817 /* TextSpeechDemo.swift */,
+				D032BCAB2D2B90D300121597 /* DataScanner.swift */,
+			);
+			path = TextSpeechDemo;
+			sourceTree = "<group>";
+		};
 		D0B01EC32D070B8E00C27935 /* TextEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +576,8 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0AE7DE72D27D4D400F77817 /* TextSpeechDemo */,
+				D0AE7DE02D27AF6900F77817 /* ChartBarDemo */,
 				D08DE92C2D279D06004E83A1 /* SearchableDemo */,
 				D0E5564A2D26AF1A000CCDD0 /* AsyncImage */,
 				D095DD032D265834005B227D /* TapBarDashboard */,
@@ -825,6 +856,7 @@
 				D0926E192CAE5B540036F103 /* PaymentDetailViewModel.swift in Sources */,
 				D0ADF1EC2B81D2EF00699060 /* Paths.swift in Sources */,
 				D0EBCDBE2C6095A10045C877 /* BasicBottomSheet.swift in Sources */,
+				D0AE7DE22D27AF7E00F77817 /* ChartBarDemo.swift in Sources */,
 				D095DD052D26584D005B227D /* TabBarDashboard.swift in Sources */,
 				D081E70B2CA2D85E008C18A9 /* CustomSearchBar.swift in Sources */,
 				D0A73ED12C648E1200C6C60C /* TinderCardView.swift in Sources */,
@@ -853,6 +885,7 @@
 				D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */,
 				D0ABAE7E2CAA5BC3000D7BD3 /* PaymentFormViewModel.swift in Sources */,
 				D06796A52CC2271F00727759 /* TripCardView.swift in Sources */,
+				D032BCAC2D2B90D300121597 /* DataScanner.swift in Sources */,
 				D07826932B96DE4C00A1C948 /* ProgressIndicator.swift in Sources */,
 				D0AB185E2CF5E4F600F9F1AC /* ProgressMainView.swift in Sources */,
 				D0681E7B2CDB6F960002D798 /* FAQ.swift in Sources */,
@@ -875,6 +908,7 @@
 				D00D18E72CE4D1B8008D5E43 /* PhotoSwift.swift in Sources */,
 				D049B6AA2BC6569600229295 /* NavigatinStack_Exercise.swift in Sources */,
 				D03A13FA2B95A25300CE6DE2 /* RoundedRectangleAnimation.swift in Sources */,
+				D0AE7DE92D27D4EB00F77817 /* TextSpeechDemo.swift in Sources */,
 				D0F5D1662CEEEC6F00B3AB1C /* MultiGridView.swift in Sources */,
 				D066C3F92CA53EFE00FCA814 /* FinanceApp.xcdatamodeld in Sources */,
 				D087C8E52BA2C4E600503815 /* ListView.swift in Sources */,
@@ -894,12 +928,14 @@
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D0A73ED52C6494CD00C6C60C /* TinderHome.swift in Sources */,
 				D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */,
+				D0AE7DE62D27B53400F77817 /* WeatherData.swift in Sources */,
 				D0C5C0A12C7C840A002E3C34 /* Card.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
 				D050FADD2CC90C1900DDC7C5 /* ExpandableListDashBoard.swift in Sources */,
 				D0EBCDC02C6097C20045C877 /* BottomSheetDemo.swift in Sources */,
 				D0F8A2322B58306C00C138CA /* CardView.swift in Sources */,
 				D0A7B4C52C5B480E00B663CD /* Gesture.swift in Sources */,
+				D0AE7DE42D27AFD600F77817 /* Mark.swift in Sources */,
 				D066C3FC2CA53FEB00FCA814 /* FinanceAppPersistenceStore.swift in Sources */,
 				D0A7CE092C9BF30300609C6F /* SearchBar.swift in Sources */,
 				D0C5C0A82C7C8C69002E3C34 /* TopNavBar.swift in Sources */,
@@ -1092,9 +1128,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Fundamentals/Preview Content\"";
-				DEVELOPMENT_TEAM = SCCRUHQ7HK;
+				DEVELOPMENT_TEAM = 35MYK7D52X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Scan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1106,7 +1143,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.akshay.com.SwiftUI-Fundamentals";
+				PRODUCT_BUNDLE_IDENTIFIER = com.system73.polynetclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1122,9 +1159,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Fundamentals/Preview Content\"";
-				DEVELOPMENT_TEAM = SCCRUHQ7HK;
+				DEVELOPMENT_TEAM = 35MYK7D52X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Scan;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1136,7 +1174,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.akshay.com.SwiftUI-Fundamentals";
+				PRODUCT_BUNDLE_IDENTIFIER = com.system73.polynetclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
