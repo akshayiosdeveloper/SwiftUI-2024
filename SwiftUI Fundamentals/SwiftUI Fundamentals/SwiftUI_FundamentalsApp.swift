@@ -43,7 +43,8 @@ struct SwiftUI_FundamentalsApp: App {
            // AsyncImageDemo()
            // SearchableDemo()
            // ChartBarDemo()
-            TextSpeechDemo()
+           // TextSpeechDemo()
+            GaugeDemo()
 
 
         }

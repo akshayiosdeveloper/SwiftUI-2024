@@ -79,6 +79,8 @@
 		D0AE7DE62D27B53400F77817 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE52D27B53400F77817 /* WeatherData.swift */; };
 		D0AE7DE92D27D4EB00F77817 /* TextSpeechDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE7DE82D27D4EB00F77817 /* TextSpeechDemo.swift */; };
 		D0B01EC52D070C0E00C27935 /* TextEditorDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */; };
+		D0B0FF6D2D2CE15700268298 /* GaugeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF6C2D2CE15700268298 /* GaugeDemo.swift */; };
+		D0B0FF6F2D2CE54A00268298 /* CustomSpeedMeterGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF6E2D2CE54A00268298 /* CustomSpeedMeterGauge.swift */; };
 		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
 		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
@@ -196,6 +198,8 @@
 		D0AE7DE52D27B53400F77817 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		D0AE7DE82D27D4EB00F77817 /* TextSpeechDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechDemo.swift; sourceTree = "<group>"; };
 		D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDashboard.swift; sourceTree = "<group>"; };
+		D0B0FF6C2D2CE15700268298 /* GaugeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeDemo.swift; sourceTree = "<group>"; };
+		D0B0FF6E2D2CE54A00268298 /* CustomSpeedMeterGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpeedMeterGauge.swift; sourceTree = "<group>"; };
 		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
 		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
@@ -527,6 +531,15 @@
 			path = TextEditor;
 			sourceTree = "<group>";
 		};
+		D0B0FF6B2D2CE14400268298 /* GaugeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0FF6C2D2CE15700268298 /* GaugeDemo.swift */,
+				D0B0FF6E2D2CE54A00268298 /* CustomSpeedMeterGauge.swift */,
+			);
+			path = GaugeDemo;
+			sourceTree = "<group>";
+		};
 		D0B6692E2C4E184000ED1F55 /* SwipeDelete */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +589,7 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0B0FF6B2D2CE14400268298 /* GaugeDemo */,
 				D0AE7DE72D27D4D400F77817 /* TextSpeechDemo */,
 				D0AE7DE02D27AF6900F77817 /* ChartBarDemo */,
 				D08DE92C2D279D06004E83A1 /* SearchableDemo */,
@@ -893,6 +907,7 @@
 				D0ABAE7A2CAA564F000D7BD3 /* PaymentFormView.swift in Sources */,
 				D0EBA9902C92A9C0009B44C1 /* Loan.swift in Sources */,
 				D04E99272B99804800EF3061 /* AnimationChallenge.swift in Sources */,
+				D0B0FF6F2D2CE54A00268298 /* CustomSpeedMeterGauge.swift in Sources */,
 				D06796A22CC2252400727759 /* Trip1.swift in Sources */,
 				D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */,
 				D0F7A09F2CDA383500577590 /* MenuItem1.swift in Sources */,
@@ -928,6 +943,7 @@
 				D09A88E42B87AC1400EFB08F /* PathExercise.swift in Sources */,
 				D0A73ED52C6494CD00C6C60C /* TinderHome.swift in Sources */,
 				D0D1FA062C4786CD0043C9BB /* RegisterationPage.swift in Sources */,
+				D0B0FF6D2D2CE15700268298 /* GaugeDemo.swift in Sources */,
 				D0AE7DE62D27B53400F77817 /* WeatherData.swift in Sources */,
 				D0C5C0A12C7C840A002E3C34 /* Card.swift in Sources */,
 				D00130FF2B9826B90011230E /* Mic_Animation.swift in Sources */,
