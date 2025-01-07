@@ -81,5 +81,10 @@ done with searchable text (3 jan 2025)
 start new chapter vision api (6 jan 2025)
 done with vision api chapter (7 jan 2025)
 started with new chapter guage (7 jan 2025)
+done with guage chapter
+start new chapter anylayout✅
+done witn new chapter anylayout
+done with swiftui book (45 chapters and total 897 pages✅ mission passed 🚀 on 7th Jan 2025 ) 
+
 
 
