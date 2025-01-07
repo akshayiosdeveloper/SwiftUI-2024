@@ -44,7 +44,9 @@ struct SwiftUI_FundamentalsApp: App {
            // SearchableDemo()
            // ChartBarDemo()
            // TextSpeechDemo()
-            GaugeDemo()
+           // GaugeDemo()
+           // GridApiDemo()
+            AnyLayoutDemo()
 
 
         }

@@ -81,6 +81,8 @@
 		D0B01EC52D070C0E00C27935 /* TextEditorDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */; };
 		D0B0FF6D2D2CE15700268298 /* GaugeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF6C2D2CE15700268298 /* GaugeDemo.swift */; };
 		D0B0FF6F2D2CE54A00268298 /* CustomSpeedMeterGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF6E2D2CE54A00268298 /* CustomSpeedMeterGauge.swift */; };
+		D0B0FF722D2D083D00268298 /* GridApiDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF712D2D083D00268298 /* GridApiDemo.swift */; };
+		D0B0FF752D2D0EAB00268298 /* AnyLayoutDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B0FF742D2D0EAB00268298 /* AnyLayoutDemo.swift */; };
 		D0B669302C4E185500ED1F55 /* SwipeDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */; };
 		D0BA37C82BC4FD810076A343 /* ListView_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */; };
 		D0BA37CA2BC4FFC20076A343 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */; };
@@ -200,6 +202,8 @@
 		D0B01EC42D070C0E00C27935 /* TextEditorDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDashboard.swift; sourceTree = "<group>"; };
 		D0B0FF6C2D2CE15700268298 /* GaugeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeDemo.swift; sourceTree = "<group>"; };
 		D0B0FF6E2D2CE54A00268298 /* CustomSpeedMeterGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpeedMeterGauge.swift; sourceTree = "<group>"; };
+		D0B0FF712D2D083D00268298 /* GridApiDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridApiDemo.swift; sourceTree = "<group>"; };
+		D0B0FF742D2D0EAB00268298 /* AnyLayoutDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLayoutDemo.swift; sourceTree = "<group>"; };
 		D0B6692F2C4E185500ED1F55 /* SwipeDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDelete.swift; sourceTree = "<group>"; };
 		D0BA37C72BC4FD810076A343 /* ListView_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Exercise.swift; sourceTree = "<group>"; };
 		D0BA37C92BC4FFC20076A343 /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
@@ -540,6 +544,22 @@
 			path = GaugeDemo;
 			sourceTree = "<group>";
 		};
+		D0B0FF702D2D07ED00268298 /* GridApiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0FF712D2D083D00268298 /* GridApiDemo.swift */,
+			);
+			path = GridApiDemo;
+			sourceTree = "<group>";
+		};
+		D0B0FF732D2D0ABF00268298 /* AnyLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0FF742D2D0EAB00268298 /* AnyLayoutDemo.swift */,
+			);
+			path = AnyLayoutDemo;
+			sourceTree = "<group>";
+		};
 		D0B6692E2C4E184000ED1F55 /* SwipeDelete */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +609,8 @@
 		D0C78A932B4674420022FC0A /* SwiftUI Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				D0B0FF732D2D0ABF00268298 /* AnyLayoutDemo */,
+				D0B0FF702D2D07ED00268298 /* GridApiDemo */,
 				D0B0FF6B2D2CE14400268298 /* GaugeDemo */,
 				D0AE7DE72D27D4D400F77817 /* TextSpeechDemo */,
 				D0AE7DE02D27AF6900F77817 /* ChartBarDemo */,
@@ -894,6 +916,7 @@
 				D0F5D1642CEEEB4C00B3AB1C /* Cafe.swift in Sources */,
 				D066C3FE2CA540F000FCA814 /* DashboardView.swift in Sources */,
 				D0136B8A2CBCD7A800FBD78A /* Article.swift in Sources */,
+				D0B0FF752D2D0EAB00268298 /* AnyLayoutDemo.swift in Sources */,
 				D03F09342CC0CC8200525561 /* AppStoreDashboardView.swift in Sources */,
 				D02FB4342C994BC8000A025C /* CheckboxStyle.swift in Sources */,
 				D0ABAE812CAA5C86000D7BD3 /* Date+Ext.swift in Sources */,
@@ -957,6 +980,7 @@
 				D0C5C0A82C7C8C69002E3C34 /* TopNavBar.swift in Sources */,
 				D03DCE242BEE460800B2C7DE /* SettingView.swift in Sources */,
 				D03B81D02C37E9BE00A68EC9 /* SettingStore.swift in Sources */,
+				D0B0FF722D2D083D00268298 /* GridApiDemo.swift in Sources */,
 				D02B75AE2B8EFCDC005A2412 /* Animation.swift in Sources */,
 				D0081FE82CF4408900951AAF /* Color+Ext.swift in Sources */,
 				D08DE92E2D279D2B004E83A1 /* SearchableDemo.swift in Sources */,
