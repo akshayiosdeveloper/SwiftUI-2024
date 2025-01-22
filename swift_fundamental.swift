@@ -77,3 +77,5 @@ swift
 Copy
 Edit
 
+Associated Types in Protocols
+An associated type in a protocol is a placeholder for a type that will be specified later, when the protocol is adopted. It allows you to define flexible and reusable protocols that work with different types without being tied to a specific one.
