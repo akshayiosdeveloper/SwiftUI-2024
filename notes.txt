@@ -1,2 +1,22 @@
 State management in SwiftUI is built into the framework using property wrappers like @State, @Binding, @Environment, @StateObject, and @ObservedObject. 
 These tools help you manage and share state efficiently across views in a declarative way.
+
+Key Property Wrappers for State Management
+@State:
+
+Used for simple, local state within a single view.
+SwiftUI automatically updates the UI when the state changes.
+@Binding:
+
+Used to share and update state between a parent and child view.
+Acts as a two-way connection.
+@ObservedObject:
+
+Used for state stored in a separate, observable class.
+Tracks and updates the UI whenever the object’s @Published properties change.
+@StateObject:
+
+Similar to @ObservedObject, but is used when the object is created and owned by the current view.
+@Environment and @EnvironmentObject:
+
+Used to pass shared data across many views in the app without having to manually pass it down the view hierarchy.
