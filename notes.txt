@@ -20,3 +20,12 @@ Similar to @ObservedObject, but is used when the object is created and owned by 
 @Environment and @EnvironmentObject:
 
 Used to pass shared data across many views in the app without having to manually pass it down the view hierarchy.
+
+Comparison of State Management Tools
+Tool	Scope	Use Case
+@State	Local to a single view	Simple UI state (e.g., a counter or toggle in one view).
+@Binding	Shared between parent and child	When a child view needs to update the parent’s state.
+@ObservedObject	Across multiple views	Use with ObservableObject for shared state in a model class.
+@StateObject	Owned by the current view	Use when the view creates and owns the observable object.
+@Environment	Across app-wide or parent views	Access shared values like themes or sizes, injected into the environment.
+@EnvironmentObject	App-wide shared state	Use for sharing an ObservableObject across multiple views without manual passing.
