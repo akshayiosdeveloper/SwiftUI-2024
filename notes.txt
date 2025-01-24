@@ -2,11 +2,34 @@ State management in SwiftUI is built into the framework using property wrappers 
 These tools help you manage and share state efficiently across views in a declarative way.
 
 Key Property Wrappers for State Management
-@State:
+=======    @State:     ========
+A property wrapper type that can read and write a value managed by SwiftUI.
+
 
 Used for simple, local state within a single view.
 SwiftUI automatically updates the UI when the state changes.
-@Binding:
+
+Each SwiftUI view is struct-based, meaning it is recreated every time the view hierarchy is updated.
+Variables in a struct are immutable by default. To have a mutable variable that persists across view updates, @State is necessary.
+
+When Should You Use @State?
+
+Local State:
+Use @State for variables that only matter to a single view (e.g., counters, toggles, text fields).
+Not Shared:
+If the state doesn’t need to be passed to other views, @State is perfect.
+Simple Logic:
+For more complex or shared logic, use @StateObject or @ObservedObject.
+
+What Happens Internally with @State?
+
+When you declare a property as @State, SwiftUI:
+
+Stores the value in a special memory location outside the view struct.
+Creates a connection between the state and the view hierarchy.
+Tracks changes to the state and triggers a re-render of the affected view when the value changes.
+
+===== @Binding: =======
 
 Used to share and update state between a parent and child view.
 Acts as a two-way connection.
