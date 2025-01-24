@@ -1,1 +1,2 @@
-State management in SwiftUI is built into the framework using property wrappers like @State, @Binding, @Environment, @StateObject, and @ObservedObject. These tools help you manage and share state efficiently across views in a declarative way.
+State management in SwiftUI is built into the framework using property wrappers like @State, @Binding, @Environment, @StateObject, and @ObservedObject. 
+These tools help you manage and share state efficiently across views in a declarative way.
