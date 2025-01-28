@@ -47,3 +47,10 @@ A @State property stores the data, while $ creates a binding reference to pass i
 The ParentView has a @State variable called isOn.
 The $isOn binding is passed to ChildToggleView, which uses @Binding.
 Changes in the child toggle directly update the parent’s state.
+
+**Key Points**
+
+Use @State for local state.
+Use @Binding to pass state from parent to child for two-way data flow.
+Prefix the state variable with $ when passing it as a binding.
+Avoid using @Binding in views that directly own the state; use @State instead.
