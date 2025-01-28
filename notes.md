@@ -54,3 +54,9 @@ Use @State for local state.
 Use @Binding to pass state from parent to child for two-way data flow.
 Prefix the state variable with $ when passing it as a binding.
 Avoid using @Binding in views that directly own the state; use @State instead.
+
+**Why Use Binding?** 
+
+State Sharing: Makes it easy to share and modify state between parent and child views.
+Two-Way Data Flow: Ensures the UI stays in sync with state changes.
+Reusable Views: Allows building reusable and modular components by letting the parent manage the state.
