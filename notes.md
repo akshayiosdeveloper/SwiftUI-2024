@@ -71,7 +71,7 @@ When a stateful model object needs to be shared between multiple views.
 When you want to decouple business logic from UI logic.
 When the object’s state is updated outside the view.
 
-**Why Use @ObservedObject?**
+**Why Use @ObservedObject?**<br>
 Data Synchronization: Keeps data consistent between parent and child views.
 Separation of Concerns: Encapsulates business logic in an external model class.
 Reactive UI: Automatically updates the view when data changes.
