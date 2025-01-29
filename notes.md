@@ -60,3 +60,21 @@ Avoid using @Binding in views that directly own the state; use @State instead.
 State Sharing: Makes it easy to share and modify state between parent and child views.
 Two-Way Data Flow: Ensures the UI stays in sync with state changes.
 Reusable Views: Allows building reusable and modular components by letting the parent manage the state.
+
+**Understanding @ObservedObject in SwiftUI**<br>
+****What is @ObservedObject?**<br>**
+@ObservedObject is a property wrapper in SwiftUI used to observe changes in an external object and update the UI when those changes occur.
+
+Unlike @State, which is used for internal state within a view, @ObservedObject is designed for state shared between multiple views. The observed object must conform to the ObservableObject protocol and notify changes using the @Published property.
+**When to Use @ObservedObject**<br>
+When a stateful model object needs to be shared between multiple views.
+When you want to decouple business logic from UI logic.
+When the object’s state is updated outside the view.
+
+**Why Use @ObservedObject?**
+Data Synchronization: Keeps data consistent between parent and child views.
+Separation of Concerns: Encapsulates business logic in an external model class.
+Reactive UI: Automatically updates the view when data changes.
+
+Prefer @StateObject over @ObservedObject when creating the object inside the view to avoid reinitialization.
+Use @EnvironmentObject when you need to share state globally across many views.
