@@ -78,3 +78,25 @@ Reactive UI: Automatically updates the view when data changes.
 
 Prefer @StateObject over @ObservedObject when creating the object inside the view to avoid reinitialization.
 Use @EnvironmentObject when you need to share state globally across many views.
+
+**Why Prefer @StateObject Over @ObservedObject When Creating the Object Inside the View**<br>
+**Key Difference<br>**
+@StateObject: Initializes and owns the lifecycle of an object within the view. It's created once and persists across view updates (like re-rendering).
+@ObservedObject: Expects the object to be created and managed outside the view. It observes the object for changes but does not control its lifecycle.
+**Why Prefer @StateObject**<br>
+When you create an instance of an observable object inside a view, SwiftUI might recreate the view during state updates, causing the object to be reinitialized. This leads to unwanted behaviors, such as resetting the state or losing data.
+
+@StateObject ensures the object is initialized only once and survives the view's lifecycle.
+
+**When to Use @ObservedObject**<br>
+Use @ObservedObject when the view receives the object from an external source, such as from a parent view:
+
+**Summary<br>
+Property Wrapper	Use Case**<br>
+@StateObject	When the view creates and owns the object to manage its lifecycle
+@ObservedObject	When the object is provided from outside and just needs observation
+
+**Summary**<br>
+Use @StateObject to create and own the object inside the view.
+Use @ObservedObject to observe an externally provided object.
+The difference becomes noticeable when views are recreated due to state changes.
