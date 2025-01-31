@@ -144,12 +144,11 @@ No Arguments:
 ==
 Autoclosures cannot take any arguments. They are always of the form () -> T, where T is the return type.
 
-''
+# My Swift Project
 
+Here is a Swift code snippet:
 
-```markdown
-# My Project
-
+```swift
 func example(_ condition: @autoclosure () -> Bool) {
     if condition() {
         print("Condition is true")
@@ -158,5 +157,3 @@ func example(_ condition: @autoclosure () -> Bool) {
     }
 }
 example(5 > 3) // The expression `5 > 3` is automatically wrapped into a closure.
-
-```
