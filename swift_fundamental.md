@@ -82,8 +82,10 @@ Edit
 An associated type in a protocol is a placeholder for a type that will be specified later, when the protocol is adopted. It allows you to define flexible and reusable protocols that work with different types without being tied to a specific one.
 
 **//------ Clousures----------- ** <br>
+==
 
 **Trailing Clousure :** <br>
+==
 A trailing closure is a Swift feature that makes code more readable when the last parameter of a function is a closure. Instead of passing the closure inside the function's parentheses, you write it outside, after the function call. This is especially useful when the closure is long or complex.
 Summary of Trailing Closure Scenarios
 **Scenario	Example** <br>
@@ -104,3 +106,57 @@ The function call and the closure logic are visually separated, making the code 
 Common in Real-World Code:
 
 Trailing closures are widely used in Swift for asynchronous tasks, animations, and higher-order functions.
+
+Autoclosure : 
+==
+In Swift, an autoclosure is a special kind of closure that automatically wraps an expression into a closure. It allows you to delay the evaluation of an expression until it is explicitly called, which can be useful for optimizing performance or controlling when an expression is evaluated.
+
+Key Points about Autoclosures:
+==
+Automatic Closure Creation:
+
+When you mark a parameter with @autoclosure, the compiler automatically wraps the expression you pass as an argument into a closure.
+
+This means the expression isn't evaluated immediately when passed to the function; instead, it's evaluated only when the closure is called.
+
+Syntax:
+==
+
+Use the @autoclosure attribute before the parameter type in a function declaration.
+
+The parameter type must be a closure that takes no arguments and returns a value of a specific type.
+
+Lazy Evaluation:
+==
+
+Autoclosures are useful for lazy evaluation, where you want to defer the evaluation of an expression until it's actually needed.
+
+This can improve performance, especially if the expression is computationally expensive or if it might not always be needed.
+
+Common Use Cases:
+==
+
+The assert function in Swift uses @autoclosure to avoid evaluating the condition in release builds.
+
+Short-circuiting operators like && and || also use autoclosures to evaluate the second operand only if necessary.
+
+No Arguments:
+==
+Autoclosures cannot take any arguments. They are always of the form () -> T, where T is the return type.
+
+''
+
+
+```markdown
+# My Project
+
+func example(_ condition: @autoclosure () -> Bool) {
+    if condition() {
+        print("Condition is true")
+    } else {
+        print("Condition is false")
+    }
+}
+example(5 > 3) // The expression `5 > 3` is automatically wrapped into a closure.
+
+```
