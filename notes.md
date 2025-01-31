@@ -100,3 +100,14 @@ Property Wrapper	Use Case**<br>
 Use @StateObject to create and own the object inside the view.
 Use @ObservedObject to observe an externally provided object.
 The difference becomes noticeable when views are recreated due to state changes.
+
+**@Environment **<br>
+==
+is a property wrapper used to access shared data or environment values that are provided by the environment of a view hierarchy. It helps manage and pass data efficiently without manually passing it through every child view.
+
+**How @Environment Works**<br>
+The @Environment property wrapper allows your views to access system-defined values or custom environment values, such as:
+
+System values: Like color schemes, accessibility settings, or size classes.
+Custom environment values: Values defined by developers using environment(_:).
+
