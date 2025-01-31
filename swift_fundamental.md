@@ -24,7 +24,7 @@ class Car: Vehicle {
     }
 }
 
-// Usage
+**// Usage**<br>
 let car = Car()
 car.startEngine()
 car.speed = 60.0
@@ -53,7 +53,7 @@ struct Truck: Drivable, Repairable {
 }
 
 
-2)** Protocol Composition**
+2)**** Protocol Composition**** <br>
 Combine multiple protocols into one requirement using &.
 
 func performTask(vehicle: Vehicle & Drivable) {
@@ -86,11 +86,13 @@ An associated type in a protocol is a placeholder for a type that will be specif
 **Trailing Clousure :** <br>
 A trailing closure is a Swift feature that makes code more readable when the last parameter of a function is a closure. Instead of passing the closure inside the function's parentheses, you write it outside, after the function call. This is especially useful when the closure is long or complex.
 Summary of Trailing Closure Scenarios
-Scenario	Example
+**Scenario	Example** <br>
 Network Requests	Fetching data from an API and handling the result with a trailing closure.
 Animations	Defining animation behavior and completion logic with trailing closures.
 Sorting/Filtering	Using trailing closures with higher-order functions like sorted, map, etc.
-Key Benefits of Trailing Closures
+
+**Key Benefits of Trailing Closures**<br>
+
 Improved Readability:
 
 Trailing closures make the code cleaner, especially when the closure is long or contains multiple lines of logic.
