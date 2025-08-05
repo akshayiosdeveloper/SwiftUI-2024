@@ -1,0 +1,10 @@
+swift recap
+enum
+
+| Feature             | Raw Values                      | Associated Values                          |
+| ------------------- | ------------------------------- | ------------------------------------------ |
+| Purpose             | Assign constant value           | Attach custom data to cases                |
+| Value Type          | Must be same type for all cases | Can vary in type and number across cases   |
+| Set at declaration? | ✅ Yes                           | ❌ No, provided when creating enum instance |
+| Access              | `case.rawValue`                 | `switch` pattern matching                  |
+| Example             | `.monday.rawValue` → `"Mon"`    | `.failure(errorCode: 404)`                 |
