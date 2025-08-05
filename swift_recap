@@ -12,6 +12,15 @@ https://chatgpt.com/share/687877a6-3a58-8003-b9ad-6cb53b2f9f75
 | Nil-Coalescing   | `??`     | -       | -                   | `name ?? "Guest"`       |
 
 
+==== control flow chapter ====
+https://chatgpt.com/share/68919527-c330-8003-95ef-c46995d19e4c
+
+| Statement     | Purpose                        |
+| ------------- | ------------------------------ |
+| `break`       | Exit current loop/switch early |
+| `continue`    | Skip to next iteration         |
+| `fallthrough` | Continue to next `switch` case |
+| `return`      | Exit from function             |
 
 
 
