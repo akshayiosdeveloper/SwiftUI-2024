@@ -1,5 +1,8 @@
 swift recap
 enum
+link :
+https://chatgpt.com/share/68918c66-530c-8003-a610-8d064c93fd44
+
 
 | Feature             | Raw Values                      | Associated Values                          |
 | ------------------- | ------------------------------- | ------------------------------------------ |
@@ -8,3 +11,10 @@ enum
 | Set at declaration? | ✅ Yes                           | ❌ No, provided when creating enum instance |
 | Access              | `case.rawValue`                 | `switch` pattern matching                  |
 | Example             | `.monday.rawValue` → `"Mon"`    | `.failure(errorCode: 404)`                 |
+
+| Feature               | Raw Values                                     |
+| --------------------- | ---------------------------------------------- |
+| Type requirement      | Must be same for all cases                     |
+| Why?                  | To allow `.rawValue` access and initialization |
+| Enforced by compiler? | ✅ Yes                                          |
+
