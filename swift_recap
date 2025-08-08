@@ -15,6 +15,9 @@ https://chatgpt.com/share/687877a6-3a58-8003-b9ad-6cb53b2f9f75
 ==== control flow chapter ====
 https://chatgpt.com/share/68919527-c330-8003-95ef-c46995d19e4c
 
+
+
+
 | Statement     | Purpose                        |
 | ------------- | ------------------------------ |
 | `break`       | Exit current loop/switch early |
@@ -23,8 +26,10 @@ https://chatgpt.com/share/68919527-c330-8003-95ef-c46995d19e4c
 | `return`      | Exit from function             |
 
 
+==== DAY 3 functions ======
+https://chatgpt.com/share/6895d3a4-d794-8003-a49f-718aeb919458
 
-#======== enum chapter =======
+#======== day 4 enum chapter =======
 link :
 https://chatgpt.com/share/68918c66-530c-8003-a610-8d064c93fd44
 
