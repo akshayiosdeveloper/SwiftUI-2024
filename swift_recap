@@ -48,3 +48,10 @@ https://chatgpt.com/share/68918c66-530c-8003-a610-8d064c93fd44
 | Why?                  | To allow `.rawValue` access and initialization |
 | Enforced by compiler? | ✅ Yes                                          |
 
+=== properties ====
+📌 Interview Summary (Cheat Sheet)
+Type	Stores Value?	When Used?	Example Use Case
+Stored	✅ Yes	Keep simple data	var name: String
+Computed	❌ No	Derived value	area = width * height
+Lazy Stored	✅ (delayed)	Expensive init, depends on self	lazy var db = Database()
+Property Observers	✅ (monitors)	Track changes	didSet { ... }
