@@ -55,3 +55,38 @@ Stored	✅ Yes	Keep simple data	var name: String
 Computed	❌ No	Derived value	area = width * height
 Lazy Stored	✅ (delayed)	Expensive init, depends on self	lazy var db = Database()
 Property Observers	✅ (monitors)	Track changes	didSet { ... }
+👀 Property Observers in Swift
+
+👉 Definition:
+Property observers are blocks of code that run whenever the value of a property changes.
+They let you react to changes instead of recomputing values like computed properties.
+
+✅ Types of Property Observers
+
+There are two observers:
+
+willSet
+
+Called before the value is changed.
+
+The new value is passed as a constant (newValue by default, or you can give it a custom name).
+
+didSet
+
+Called after the value is changed.
+
+The old value is passed as a constant (oldValue by default).
+
+📌 Rules to Remember
+
+You can use both willSet and didSet together or only one.
+
+They can be applied to stored properties (var, not let).
+
+They cannot be applied to lazy properties (since lazy is initialized only once).
+
+They are not called during initialization (inside init or at declaration).
+
+They can be added to inherited properties by overriding.
+
+
