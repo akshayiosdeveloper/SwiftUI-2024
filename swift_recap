@@ -89,4 +89,50 @@ They are not called during initialization (inside init or at declaration).
 
 They can be added to inherited properties by overriding.
 
+================== functions in swift ===== 
 
+🔹 Interview Traps & Deep Insights
+
+Q: Why does a struct need mutating but a class does not?
+👉 Because structs are value types. Inside methods, self is a constant copy by default. To modify, you must mark the method mutating.
+Classes are reference types, so methods can always mutate stored properties without restriction.
+
+Q: Can static methods access instance properties?
+❌ No.
+They belong to the type, so they don’t have an instance context.
+They can only access static properties/methods.
+
+Q: Can instance methods call type methods and vice versa?
+
+Instance → Type ✅ Yes (via TypeName.method() or Self.method()).
+
+Type → Instance ❌ No (needs an instance first).
+
+Q: Can mutating methods be called on let constants?
+
+var p = Point(x: 0, y: 0) // ✅ works
+p.moveBy(dx: 1, dy: 1)
+
+let q = Point(x: 0, y: 0) // ❌ error
+q.moveBy(dx: 1, dy: 1)
+
+
+👉 Because let makes the struct completely immutable.
+
+Q: Can enums have mutating methods?
+✅ Yes, commonly used for state toggling.
+
+🔹 Quick Comparison Table
+Feature	Instance Method	Type Method (static/class)	Mutating Method (Struct/Enum)
+Belongs to	Instance	Type	Instance (value types only)
+Access instance props	✅ Yes	❌ No	✅ Yes (after mutating)
+Access type props	✅ Yes	✅ Yes	✅ Yes
+Needed for mutation	Only for value types (struct/enum)	Not applicable	Required to modify/reassign self
+
+⚡ Interview-ready takeaway:
+
+Use instance methods for behavior tied to objects.
+
+Use type methods for utilities and shared state.
+
+Use mutating methods in value types when modifying properties or self.
