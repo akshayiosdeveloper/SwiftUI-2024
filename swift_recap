@@ -144,3 +144,48 @@ Instance → Type ✅ Works (because an instance always knows its type).
 Type → Instance ❌ Not possible directly (because type has no instance context).
 
 ✅ If needed, type methods must create or receive an instance to call its instance methods.
+🔹 try? (Optional Try)
+
+Converts the result into an optional.
+
+If success → wrapped in optional (Some(value)).
+
+If error thrown → returns nil (error is ignored).
+
+You don’t need do-catch.
+
+Example
+let result1 = try? divide(10, by: 2)
+print(result1)   // Optional(5)
+
+let result2 = try? divide(10, by: 0)
+print(result2)   // nil (error ignored)
+
+
+👉 With try?, you lose error details — you only know success or failure.
+
+🔹 Key Differences
+Feature	try	try?
+Error Handling	Requires do-catch or propagate with throws	Converts to nil, ignores error
+Return Type	Actual type	Optional of that type
+Error Details	Preserved, can be inspected in catch	Lost (only success/failure info)
+Use Case	When you care about the error	When you only care about success/failure
+🔹 Combined Example
+do {
+    let result = try divide(10, by: 0)  // throws
+    print(result)
+} catch MathError.divideByZero {
+    print("Divide by zero error")       // ✅ catch specific error
+}
+
+let optionalResult = try? divide(10, by: 0)
+print(optionalResult)  // nil (no error info)
+
+
+✅ Interview Punchline:
+
+Use try when you want to handle errors explicitly (do-catch).
+
+Use try? when you don’t care about the error reason, just whether it succeeded or not.
+
+Would you like me to also compare try? vs try! in the same style? (Another common trap interviewers ask right after this one).
