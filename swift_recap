@@ -136,3 +136,11 @@ Use instance methods for behavior tied to objects.
 Use type methods for utilities and shared state.
 
 Use mutating methods in value types when modifying properties or self.
+==
+Final Interview-Ready Summary
+
+Instance → Type ✅ Works (because an instance always knows its type).
+
+Type → Instance ❌ Not possible directly (because type has no instance context).
+
+✅ If needed, type methods must create or receive an instance to call its instance methods.
